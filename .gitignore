@@ -1,0 +1,13 @@
+*.db
+
+*.py[cod]
+
+.web
+
+.web/
+.env
+__pycache__/
+setup.cfg
+linter.sh
+venv/
+assets/
