@@ -16,7 +16,9 @@ is_external: List[bool] = [True, True, False]
 # TEXTs
 title_main: str = "Web de la boda de los novios"
 title_contact: str = "Página de contacto de la web de la boda"
-description_main: str = "Parte principal de la web de la boda de los novios para gestionar las invitaciones"
+description_main: str = (
+    "Parte principal de la web de la boda de los novios para gestionar las invitaciones"
+)
 description_contact: str = "Parte de la web donde aparece cómo contactar con los novios"
 
 main_text: str = """

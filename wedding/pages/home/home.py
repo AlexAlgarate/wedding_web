@@ -7,6 +7,7 @@ from wedding.pages.home.views.flamingo_image import flamingo_header
 from wedding.pages.home.views.header import header
 from wedding.pages.home.views.images_header import images_header
 from wedding.pages.home.views.main_text import main_text
+from wedding.routes import FileRoutes as file
 from wedding.styles import style
 from wedding.styles.style import Size
 
@@ -19,11 +20,13 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 flamingo_header(),
-                header(utils.wedding_date),
-                images_header(),
+                header(),
+                images_header(image=file.IMAGE_HEADER_ONE.value),
                 countdown(),
-                main_text(utils.main_text),
+                images_header(image=file.IMAGE_HEADER_TWO.value),
+                main_text(),
                 max_width=style.MAX_WIDTH,
+                margin=Size.DEFAULT.value,
             ),
             width="100%",
             padding=Size.MEDIUM.value,

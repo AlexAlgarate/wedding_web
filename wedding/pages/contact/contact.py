@@ -11,7 +11,11 @@ from wedding.styles.style import Size
 contact_one, contact_two = utils.contact_1, utils.contact_2
 
 
-@rx.page(route=Route.CONTACT.value, title=utils.title_contact, description=utils.description_contact)
+@rx.page(
+    route=Route.CONTACT.value,
+    title=utils.title_contact,
+    description=utils.description_contact,
+)
 def contact() -> rx.Component:
     return rx.vstack(
         rx.script("document.documentElement.lang='es'"),

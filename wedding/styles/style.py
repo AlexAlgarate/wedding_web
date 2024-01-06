@@ -59,7 +59,6 @@ BASE_STYLE = {
 
 
 shadow_style = dict(
-    border_radius="12px 50px",
     box_shadow="""
         inset 0 -3em 3em rgba(0, 0, 0, 0.1),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3)

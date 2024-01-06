@@ -3,19 +3,21 @@ from typing import List
 import reflex as rx
 
 import wedding.utils as utils
+from wedding.pages.home.views.flamingo_image import flamingo_header
 from wedding.styles.fonts import Font, FontWeight
 from wedding.styles.style import Size
 
 
-def header(list_date: List[str]) -> rx.Component:
+def header() -> rx.Component:
     return rx.center(
         rx.vstack(
+            # flamingo_header(),
             rx.heading(
                 utils.title_header,
                 font_size=Size.MEDIUM_BIGGER.value,
                 font_weight=FontWeight.MEDIUM.value,
             ),
-            _wedding_date_header(list_date=list_date),
+            _wedding_date_header(list_date=utils.wedding_date),
             font_family=Font.TITLE.value,
             align_items="center",
             width="100%",
