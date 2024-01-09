@@ -13,7 +13,6 @@ class FontWeight(Enum):
 
 
 class FontHeight(Enum):
-    ZERO = "0px !important"
     SMALL = "0.5em"
     DEFAULT = "1em"
     MEDIUM = "1.25em"

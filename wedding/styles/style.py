@@ -40,7 +40,7 @@ BASE_STYLE = {
     rx.Heading: {
         "font_family": Font.TITLE.value,
         "font_weight": FontWeight.MEDIUM.value,
-        "font_size": Size.BIG.value,
+        # "font_size": Size.BIG.value,
     },
     rx.Link: {"text_decoration": "none", "_hover": {}},
     rx.Image: {

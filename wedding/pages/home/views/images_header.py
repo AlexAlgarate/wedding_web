@@ -8,11 +8,10 @@ from wedding.styles.style import Size
 
 def images_header(image: str) -> rx.Component:
     return rx.vstack(
-        rx.responsive_grid(
+        rx.center(
             image_header(image=image, alt=utils.alt_image_one),
-            # image_header(image=image, alt=utils.alt_image_two),
             spacing=Size.MEDIUM.value,
-            columns=[1, 2],
+            align_items="center",
             width="75%",
         ),
     )
