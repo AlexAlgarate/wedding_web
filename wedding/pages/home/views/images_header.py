@@ -2,7 +2,6 @@ import reflex as rx
 
 from wedding import utils as utils
 from wedding.components.images import image_header
-from wedding.routes import FileRoutes as file
 from wedding.styles.style import Size
 
 
