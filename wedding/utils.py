@@ -7,13 +7,15 @@ from wedding import urls as url
 from wedding.routes import Route
 
 load_dotenv()
+
+
 # Menu items
 menu_items: List[str] = ["Fotos", "Confirmación", "Contacto"]
 url_list: List[str] = [url.GOOGLE_FOTOS_URL, url.CONFIRMATION_URL, Route.CONTACT.value]
 is_external: List[bool] = [True, True, False]
 
 
-# TEXTs
+# Web descriptions
 title_main: str = "Web de la boda de los novios"
 title_contact: str = "Página de contacto de la web de la boda"
 description_main: str = (
@@ -21,47 +23,66 @@ description_main: str = (
 )
 description_contact: str = "Parte de la web donde aparece cómo contactar con los novios"
 
-main_text: str = """
-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
-galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos
-electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s
-con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum,
-y más recientemente con software de autoedición,
-como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-"""
 
+# Initials navbar
 initials_navbar: str = "V & Á"
-title_header: str = "¡Nos casamos!"
 
+# Header texts
+title_header: str = "¡Nos casamos!"
 wedding_date: List[str] = [
     "30",
     "agosto",
     "2024",
     " de ",
 ]
+
+
+# Countdown texts
 countdown_heading: str = "¡Cuenta atrás!"
 save_date_button: str = "Guardar fecha"
 
 
+# Contact texts
 contact_header: str = "¿Quieres contactar con nosotros?"
 contact_one: str = "Vicky"
 contact_two: str = "Álex"
 
+
+# Contact Info
 contact_1 = dict(
     text="Vicky",
     email=os.getenv("VICKY_EMAIL"),
     phone_number=os.getenv("VICKY_PHONE"),
 )
-
 contact_2 = dict(
     text="Álex",
     email=os.getenv("ALEX_EMAIL"),
     phone_number=os.getenv("ALEX_PHONE"),
 )
+
+
+# Image descriptions
 alt_image_one = "Foto de Vicky"
 alt_image_two = "Foto de Vicky"
 alt_image_home = "Icono de una casa para redireccionar a la página de inicio."
 alt_image_menu = "Icono de una hamburguesa que abre el menú desplegable."
+alt_flamingo_right = "Flamingo looking right"
+alt_flamingo_left = "Flamingo looking left"
+
+
+## SECTION TEXTS  ##
+
+# Celebration
+celebration = "Agripina Eventos y Celebraciones"
+wedding_address = "Cjón. los Romanos, 1 (Punta Umbría, Huelva)"
+wedding_hour = "18:00"
+
+# Gift
+gift = "Vuestra presencia es nuestro mayor regalo, pero si queréis hacer una aportacion este es nuestro número de cuenta"
+account_number = os.getenv("ACCOUNT_NUMBER")
+# Confirmation
+confirmation = "SE RUEGA CONFIRMACIÓN"
+# Photo
+photo_section = (
+    "PUBLICA FOTOS SUBIÉNDOLAS AL ALBÚM COMPARTIDO DE GOOGLE FOTOS DE LOS NOVIOS."
+)

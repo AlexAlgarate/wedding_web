@@ -1,14 +1,16 @@
 import reflex as rx
 
 from wedding import utils
+from wedding.components.icon_section import icon_section
+from wedding.components.main_text import main_text
 from wedding.components.navbar import navbar
+from wedding.components.title_section import title_section
 from wedding.pages.home.views.countdown.countdown import countdown
+from wedding.pages.home.views.header.components.images_header import images_header
 from wedding.pages.home.views.header.flamingo_image import flamingo_header
 from wedding.pages.home.views.header.header import header
-from wedding.pages.home.views.images_header import images_header
-from wedding.pages.home.views.main_text import main_text
-from wedding.pages.home.views.sections import bus_icon, title_section
 from wedding.routes import FileRoutes as file
+from wedding.routes import IconRoutes as icon
 from wedding.styles import Size, style
 from wedding.styles.colors import Color, TextColor
 from wedding.styles.fonts import Font, FontWeight
@@ -35,21 +37,21 @@ def index() -> rx.Component:
                 countdown(),
                 images_header(image=file.IMAGE_HEADER_TWO.value),
                 title_section("Ceremonia y Celebración"),
-                bus_icon(),
+                icon_section(icon=icon.ICON_CELEBRATION.value),
                 rx.spacer(),
                 title_section("Servicio de autobuses"),
-                bus_icon(),
+                icon_section(icon=icon.ICON_BUS.value),
                 rx.spacer(),
                 title_section("Confirmación"),
-                bus_icon(),
+                icon_section(icon=icon.ICON_CONFIRMATION.value),
                 main_text("Blablblá Juan es un calvo que se parece a Melitón"),
                 rx.spacer(),
                 title_section("Lista de regalos"),
-                bus_icon(),
+                icon_section(icon="/camera.png"),
                 main_text("Blablblá Juan es un calvo que se parece a Melitón"),
                 rx.spacer(),
                 title_section("Albúm de fotos"),
-                bus_icon(),
+                icon_section(icon=icon.ICON_CAMERA.value),
                 main_text(
                     "Publica fotos subiéndolas al albúm compartido de Google Fotos de los novios."
                 ),

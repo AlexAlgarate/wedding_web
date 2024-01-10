@@ -1,25 +1,30 @@
 import reflex as rx
 
-from wedding.routes import FileRoutes as file
+import wedding.utils as utils
+from wedding.routes import IconRoutes as icon
 
 
 def flamingo_header() -> rx.Component:
     return rx.box(
-        rx.hstack(
-            rx.image(src=file.FLAMINGO_RIGHT.value, opacity="0.5", height="50%", width="50%"),
-            rx.image(
-                src=file.FLAMINGO_LEFT.value,
-                opacity="0.5",
-                height="50%",
-                width="50%",
-            ),
-            margin_inline_start="-5.5em",
-            display="flex",
-            align_items="center",
-            flex_direction="row",
-        )
+        rx.image(
+            src=icon.ICON_FLAMINGO_RIGHT.value,
+            opacity="0.5",
+            height="50%",
+            width="50%",
+            position="relative",
+            alt=utils.alt_flamingo_right,
+        ),
+        rx.image(
+            src=icon.ICON_FLAMINGO_LEFT.value,
+            opacity="0.5",
+            height="50%",
+            width="50%",
+            position="relative",
+            left="-1.5em",
+            alt=utils.alt_flamingo_left,
+        ),
+        display="flex",
+        flex_direction="row",
+        position="relative",
+        width="85%",
     )
-
-
-# def flamingo_header() -> rx.Component:
-#     return rx.image(src=file.FLAMINGO.value, opacity="0.5", height="50%", width="50%")

@@ -8,9 +8,15 @@ class Route(Enum):
 
 class FileRoutes(Enum):
     JS_COUNTDOWN = "/js/countdown.js"
-    FLAMINGO_LEFT = "/flamingo_left.png"
-    FLAMINGO_RIGHT = "/flamingo_right.png"
     IMAGE_HEADER_ONE = "/vicky_bici_copia.png"
     IMAGE_HEADER_TWO = "/vicky_bota_copia.png"
-    IMAGE_HOME = "/hogar.png"
-    BUS = "/autobus.png"
+
+
+class IconRoutes(Enum):
+    ICON_FLAMINGO_RIGHT = "/icons/flamingo_right.png"
+    ICON_FLAMINGO_LEFT = "/icons/flamingo_left.png"
+    ICON_IMAGE_HOME = "/icons/hogar.png"
+    ICON_BUS = "/icons/bus.png"
+    ICON_CAMERA = "/icons/camera.png"
+    ICON_CELEBRATION = "/icons/celebration.png"
+    ICON_CONFIRMATION = "/icons/confirmation.png"

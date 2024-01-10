@@ -3,7 +3,7 @@ import reflex as rx
 import wedding.utils as utils
 from wedding.components.link_navbar import link_navbar
 from wedding.components.menu_bar import menu_bar
-from wedding.routes import FileRoutes as file
+from wedding.routes import IconRoutes as icon
 from wedding.routes import Route
 from wedding.styles.colors import TextColor
 from wedding.styles.fonts import Font, FontHeight
@@ -14,7 +14,7 @@ def navbar() -> rx.Component:
     return rx.hstack(
         link_navbar(
             title=rx.image(
-                src=file.IMAGE_HOME.value,
+                src=icon.ICON_IMAGE_HOME.value,
                 alt=utils.alt_image_home,
             ),
             url=Route.INDEX.value,
