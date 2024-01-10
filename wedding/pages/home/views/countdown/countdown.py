@@ -33,16 +33,20 @@ def countdown() -> rx.Component:
                 font_family=Font.TITLE.value,
                 margin_bottom=Size.SMALL.value,
                 font_size=[
-                    Size.LARGE.value,
-                    Size.LARGE.value,
+                    "1.8em",
+                    Size.BIG.value,
                     Size.BIG.value,
                     Size.BIG.value,
                     Size.BIG.value,
                 ],
             ),
         ),
-        button_home(url=url.CALENDAR_HTML),
-        rx.script(src=file.JS_COUNTDOWN.value),
+        rx.hstack(
+            button_home(url=url.CALENDAR_HTML),
+        ),
+        rx.script(
+            src=file.JS_COUNTDOWN.value,
+        ),
         width="100%",
         margin=Size.BIG.value,
     )

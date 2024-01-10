@@ -21,25 +21,26 @@ def header() -> rx.Component:
                 ],
                 font_weight=FontWeight.MEDIUM.value,
                 font_family=Font.TITLE.value,
+                width="100%",
             ),
         ),
         rx.hstack(
             _wedding_date_header(list_date=utils.wedding_date),
+            width="100%",
         ),
         display="flex",
         flex_direction="column",
         justify_content="center",
         align_items="center",
-        width="100%",
     )
 
 
 def _wedding_date_header(list_date: List[str]) -> rx.Component:
     return rx.box(
         date_component(list_date[0]),
-        rx.span(list_date[3], font_size=Size.LARGE.value),
+        rx.span(list_date[3], font_size="1.25em"),
         date_component(list_date[1]),
-        rx.span(list_date[3], font_size=Size.LARGE.value),
+        rx.span(list_date[3], font_size="1.25em"),
         date_component(list_date[2]),
         font_family=Font.TITLE.value,
         font_size=[
@@ -54,4 +55,4 @@ def _wedding_date_header(list_date: List[str]) -> rx.Component:
 
 
 def date_component(date_element: str) -> rx.Component:
-    return rx.span(date_element, font_size=Size.BIG.value)
+    return rx.span(date_element, font_size=Size.LARGE.value)

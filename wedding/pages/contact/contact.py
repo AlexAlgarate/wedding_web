@@ -1,5 +1,3 @@
-from typing import Dict
-
 import reflex as rx
 
 from wedding import utils

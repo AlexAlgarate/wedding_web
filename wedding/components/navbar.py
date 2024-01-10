@@ -1,11 +1,12 @@
 import reflex as rx
 
-import wedding.urls as url
 import wedding.utils as utils
 from wedding.components.link_navbar import link_navbar
 from wedding.components.menu_bar import menu_bar
 from wedding.routes import FileRoutes as file
 from wedding.routes import Route
+from wedding.styles.colors import TextColor
+from wedding.styles.fonts import Font, FontHeight
 from wedding.styles.style import Size
 
 
@@ -20,7 +21,19 @@ def navbar() -> rx.Component:
             is_external=False,
         ),
         rx.spacer(),
-        rx.text(utils.initials_navbar, text_align="center"),
+        rx.text(
+            utils.initials_navbar,
+            text_align="center",
+            font_family=Font.DEFAULT.value,
+            color=TextColor.DEFAULT.value,
+            font_size=[
+                FontHeight.MEDIUM.value,
+                FontHeight.BIG.value,
+                FontHeight.BIG.value,
+                FontHeight.BIG.value,
+                FontHeight.BIG.value,
+            ],
+        ),
         rx.spacer(),
         menu_bar(
             menu_items=utils.menu_items,
