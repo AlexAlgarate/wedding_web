@@ -20,3 +20,5 @@ class IconRoutes(Enum):
     ICON_CAMERA = "/icons/camera.png"
     ICON_CELEBRATION = "/icons/celebration.png"
     ICON_CONFIRMATION = "/icons/confirmation.png"
+    ICON_MENU = "/icons/menu_icon.png"
+    ICON_GIFT = "/icons/gift.png"

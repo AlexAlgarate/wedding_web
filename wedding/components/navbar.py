@@ -39,7 +39,7 @@ def navbar() -> rx.Component:
             menu_items=utils.menu_items,
             urls_list=utils.url_list,
             is_external_list=utils.is_external,
-            icon="menu_icon",
+            icon=icon.ICON_MENU.value,
             alt=utils.alt_image_menu,
         ),
         position="sticky",

@@ -9,5 +9,5 @@ rm -f frontend.zip
 echo ".web/" > .gitignore
 echo "__pycache__/" >> .gitignore
 echo "venv/" >> .gitignore
-
+echo ".env" >> .gitignore
 deactivate

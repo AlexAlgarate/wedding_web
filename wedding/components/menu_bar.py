@@ -21,7 +21,7 @@ def menu_bar(
         if item_name != menu_items[-1]:
             menu_content.append(rx.menu_divider())
     return rx.menu(
-        rx.menu_button(rx.image(src=f"/{icon}.png", alt=alt)),
+        rx.menu_button(rx.image(src=icon, alt=alt)),
         rx.menu_list(
             *menu_content,
             padding=Size.DEFAULT.value,

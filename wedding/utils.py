@@ -83,4 +83,6 @@ account_number = os.getenv("ACCOUNT_NUMBER")
 # Confirmation
 confirmation = "SE RUEGA CONFIRMACIÓN"
 # Photo
-photo_section = "PUBLICA FOTOS SUBIÉNDOLAS AL ALBÚM COMPARTIDO DE GOOGLE FOTOS DE LOS NOVIOS."
+photo_section = (
+    "PUBLICA FOTOS SUBIÉNDOLAS AL ALBÚM COMPARTIDO DE GOOGLE FOTOS DE LOS NOVIOS."
+)
