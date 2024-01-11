@@ -5,8 +5,8 @@ from wedding.components.link_navbar import link_navbar
 from wedding.components.menu_bar import menu_bar
 from wedding.routes import IconRoutes as icon
 from wedding.routes import Route
-from wedding.styles.colors import TextColor
-from wedding.styles.fonts import Font, FontHeight
+from wedding.styles import style
+from wedding.styles.fonts import FontHeight
 from wedding.styles.style import Size
 
 
@@ -24,8 +24,6 @@ def navbar() -> rx.Component:
         rx.text(
             utils.initials_navbar,
             text_align="center",
-            font_family=Font.DEFAULT.value,
-            color=TextColor.DEFAULT.value,
             font_size=[
                 FontHeight.MEDIUM.value,
                 FontHeight.BIG.value,
@@ -48,5 +46,6 @@ def navbar() -> rx.Component:
         z_index="999",
         top="0",
         width="100%",
+        style=style.NAVBAR_STYLE,
         class_name="navbar_wedding",
     )

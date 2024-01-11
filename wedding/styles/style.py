@@ -17,6 +17,7 @@ STYLESHEETS = [
 ]
 
 
+# Base Sizes
 class Size(Enum):
     ZERO = "0px !important"
     SMALL = "0.25em"
@@ -30,6 +31,13 @@ class Size(Enum):
 
 
 # Styles
+shadow_style = dict(
+    box_shadow="""
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3)
+        """,
+)
+
 
 BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
@@ -37,30 +45,13 @@ BASE_STYLE = {
     "font_size": Size.DEFAULT.value,
     "background_color": Color.BACKGROUND.value,
     "color": TextColor.DEFAULT.value,
-    rx.Heading: {
-        "font_family": Font.TITLE.value,
-        "font_weight": FontWeight.MEDIUM.value,
-        # "font_size": Size.BIG.value,
-    },
-    rx.Link: {"text_decoration": "none", "_hover": {}},
-    rx.Image: {
-        "width": "auto",
-        "height": "auto",
-    },
-    rx.Text: {
-        "font_size": Size.LARGE.value,
-        "line_height": FontHeight.MEDIUM.value,
-    },
-    rx.Icon: {
-        "width": Size.LARGE.value,
-        "height": Size.LARGE.value,
-    },
 }
 
 
-shadow_style = dict(
-    box_shadow="""
-        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-        0.3em 0.3em 1em rgba(0, 0, 0, 0.3)
-        """,
-)
+NAVBAR_STYLE = {
+    "background_color": Color.CONTENT.value,
+    "color": TextColor.DEFAULT.value,
+    "font_family": Font.DEFAULT.value,
+    "font_weight": FontWeight.BOLD.value,
+    "font_size": Size.DEFAULT.value,
+}

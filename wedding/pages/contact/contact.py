@@ -1,10 +1,10 @@
 import reflex as rx
 
 from wedding import utils
-from wedding.components.contact_box import contact_box
 from wedding.components.navbar import navbar
+from wedding.pages.contact.components.contact_box import contact_box
 from wedding.routes import Route
-from wedding.styles.style import Size
+from wedding.styles import Size, style
 
 contact_one, contact_two = utils.contact_1, utils.contact_2
 
@@ -29,4 +29,6 @@ def contact() -> rx.Component:
                 ),
             )
         ),
+        style=style.BASE_STYLE,
+        width="100%",
     )
