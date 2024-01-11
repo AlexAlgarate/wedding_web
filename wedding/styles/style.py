@@ -1,9 +1,8 @@
 from enum import Enum
-
 import reflex as rx
 
 from wedding.styles.colors import Color, TextColor
-from wedding.styles.fonts import Font, FontHeight, FontWeight
+from wedding.styles.fonts import Font, FontWeight
 
 # Constants
 
@@ -31,13 +30,6 @@ class Size(Enum):
 
 
 # Styles
-shadow_style = dict(
-    box_shadow="""
-        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-        0.3em 0.3em 1em rgba(0, 0, 0, 0.3)
-        """,
-)
-
 
 BASE_STYLE = {
     "font_family": Font.DEFAULT.value,

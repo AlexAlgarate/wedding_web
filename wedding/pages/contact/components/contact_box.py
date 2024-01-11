@@ -14,7 +14,11 @@ def contact_box(
         contact_email(email=email),
         contact_phone(phone_number=phone_number),
         # border=".5px solid",
-        style=style.shadow_style,
+        border_radius="12px 50px",
+        box_shadow="""
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3)
+        """,
         width="auto",
         margin_bottom="30px",
     )
@@ -47,7 +51,6 @@ def contact_box_(text: str, email: str, phone_number: str) -> rx.Component:
         rx.text(text, text_align="center"),
         contact_info(icon="email", info=email),
         contact_info(icon="phone", info=phone_number),
-        style=style.shadow_style,
         width="auto",
         margin_bottom="30px",
     )

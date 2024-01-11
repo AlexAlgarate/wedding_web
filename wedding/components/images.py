@@ -4,11 +4,14 @@ from wedding.styles import style
 from wedding.styles.style import Size
 
 
-def image_header(image: str, alt: str) -> rx.Component:
+def image_web(image: str, alt: str) -> rx.Component:
     return rx.image(
         src=image,
         margin_bottom=Size.MEDIUM.value,
         border_radius="12px 50px",
-        style=style.shadow_style,
+        box_shadow="""
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3)
+        """,
         alt=alt,
     )

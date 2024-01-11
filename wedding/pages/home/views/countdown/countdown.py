@@ -2,48 +2,20 @@ import reflex as rx
 
 import wedding.urls as url
 from wedding import utils as utils
-from wedding.components.button_home import button_home
+from wedding.components.header_text import header_text
 from wedding.routes import FileRoutes as file
-from wedding.styles.fonts import Font
 from wedding.styles.style import Size
+
+from .components import button_date, countdown_text
 
 
 def countdown() -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.text(
-                utils.countdown_heading,
-                margin_top="-0.15em",
-                # padding=Size.SMALL.value,
-                align_items="center",
-                font_family=Font.TITLE.value,
-                font_size=[
-                    Size.MEDIUM_BIGGER.value,
-                    Size.MEDIUM_BIGGER.value,
-                    Size.VERY_BIG.value,
-                    Size.VERY_BIG.value,
-                    Size.VERY_BIG.value,
-                ],
-            ),
+            header_text(utils.countdown_heading, style={"margin_top": "-0.15em"}),
         ),
-        rx.hstack(
-            rx.text(
-                id="countdown",
-                margin_left=Size.MEDIUM.value,
-                font_family=Font.TITLE.value,
-                margin_bottom=Size.SMALL.value,
-                font_size=[
-                    "1.8em",
-                    Size.BIG.value,
-                    Size.BIG.value,
-                    Size.BIG.value,
-                    Size.BIG.value,
-                ],
-            ),
-        ),
-        rx.hstack(
-            button_home(url=url.CALENDAR_HTML),
-        ),
+        rx.hstack(countdown_text()),
+        rx.hstack(button_date(url=url.CALENDAR_HTML)),
         rx.script(
             src=file.JS_COUNTDOWN.value,
         ),

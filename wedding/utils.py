@@ -68,7 +68,7 @@ alt_image_home = "Icono de una casa para redireccionar a la página de inicio."
 alt_image_menu = "Icono de una hamburguesa que abre el menú desplegable."
 alt_flamingo_right = "Flamingo looking right"
 alt_flamingo_left = "Flamingo looking left"
-
+alt_celebration = "Foto del comedor al aire libre de La Agripina."
 
 ## SECTION TEXTS  ##
 
@@ -83,6 +83,4 @@ account_number = os.getenv("ACCOUNT_NUMBER")
 # Confirmation
 confirmation = "SE RUEGA CONFIRMACIÓN"
 # Photo
-photo_section = (
-    "PUBLICA FOTOS SUBIÉNDOLAS AL ALBÚM COMPARTIDO DE GOOGLE FOTOS DE LOS NOVIOS."
-)
+photo_section = "Publica fotos subiéndolas al albúm compartido de Google Fotos de los novios."
