@@ -1,58 +1,24 @@
-from typing import List
-
 import reflex as rx
 
 import wedding.utils as utils
-from wedding.styles.fonts import Font, FontWeight
-from wedding.styles.style import Size
+
+from .components import flamingo_header, header_text, wedding_date_header
 
 
 def header() -> rx.Component:
-    return rx.vstack(
-        rx.hstack(
-            rx.text(
-                utils.title_header,
-                font_size=[
-                    Size.MEDIUM_BIGGER.value,
-                    Size.MEDIUM_BIGGER.value,
-                    Size.VERY_BIG.value,
-                    Size.VERY_BIG.value,
-                    Size.VERY_BIG.value,
-                ],
-                font_weight=FontWeight.MEDIUM.value,
-                font_family=Font.TITLE.value,
+    return rx.box(
+        flamingo_header(),
+        rx.vstack(
+            rx.hstack(
+                header_text(utils.title_header),
+            ),
+            rx.hstack(
+                wedding_date_header(list_date=utils.wedding_date),
                 width="100%",
             ),
-        ),
-        rx.hstack(
-            _wedding_date_header(list_date=utils.wedding_date),
-            width="100%",
         ),
         display="flex",
         flex_direction="column",
         justify_content="center",
         align_items="center",
     )
-
-
-def _wedding_date_header(list_date: List[str]) -> rx.Component:
-    return rx.box(
-        date_component(list_date[0]),
-        rx.span(list_date[3], font_size="1.25em"),
-        date_component(list_date[1]),
-        rx.span(list_date[3], font_size="1.25em"),
-        date_component(list_date[2]),
-        font_family=Font.TITLE.value,
-        font_size=[
-            Size.LARGE.value,
-            Size.LARGE.value,
-            Size.BIG.value,
-            Size.BIG.value,
-            Size.BIG.value,
-        ],
-        width="100%",
-    )
-
-
-def date_component(date_element: str) -> rx.Component:
-    return rx.span(date_element, font_size=Size.LARGE.value)

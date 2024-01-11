@@ -7,21 +7,10 @@ from wedding.components.navbar import navbar
 from wedding.components.title_section import title_section
 from wedding.pages.home.views.countdown.countdown import countdown
 from wedding.pages.home.views.header.components.images_header import images_header
-from wedding.pages.home.views.header.flamingo_image import flamingo_header
 from wedding.pages.home.views.header.header import header
 from wedding.routes import FileRoutes as file
 from wedding.routes import IconRoutes as icon
 from wedding.styles import Size, style
-from wedding.styles.colors import Color, TextColor
-from wedding.styles.fonts import Font, FontWeight
-
-BASE_STYLE = {
-    "font_family": Font.DEFAULT.value,
-    "font_weight": FontWeight.LIGHT.value,
-    "font_size": Size.DEFAULT.value,
-    "background_color": Color.BACKGROUND.value,
-    "color": TextColor.DEFAULT.value,
-}
 
 
 @rx.page(title=utils.title_main, description=utils.description_main)
@@ -31,7 +20,6 @@ def index() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
-                flamingo_header(),
                 header(),
                 images_header(image=file.IMAGE_HEADER_ONE.value),
                 countdown(),
@@ -60,6 +48,6 @@ def index() -> rx.Component:
             ),
             width="100%",
             padding=Size.MEDIUM.value,
-            style=BASE_STYLE,
+            style=style.BASE_STYLE,
         ),
     )
