@@ -1,6 +1,5 @@
 import reflex as rx
 
-from wedding.styles import style
 from wedding.styles.style import Size
 
 

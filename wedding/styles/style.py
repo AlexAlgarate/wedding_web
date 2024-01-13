@@ -1,7 +1,6 @@
 from enum import Enum
-import reflex as rx
 
-from wedding.styles.colors import Color, TextColor
+from wedding.styles.colors import Color
 from wedding.styles.fonts import Font, FontWeight
 
 # Constants
@@ -35,15 +34,21 @@ BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.LIGHT.value,
     "font_size": Size.DEFAULT.value,
-    "background_color": Color.BACKGROUND.value,
-    "color": TextColor.DEFAULT.value,
+    "background_color": Color.BACKGROUND.value + "!important",
+    "color": Color.TEXT_DEFAULT.value + "!important",
 }
 
 
 NAVBAR_STYLE = {
     "background_color": Color.CONTENT.value,
-    "color": TextColor.DEFAULT.value,
+    "color": Color.TEXT_DEFAULT.value,
     "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.BOLD.value,
     "font_size": Size.DEFAULT.value,
 }
+
+
+shadow = """
+    inset 0 -2em 2em rgba(0, 0, 0, 0.1),
+    .2em .2em .8em rgba(0, 0, 0, 0.3)
+"""

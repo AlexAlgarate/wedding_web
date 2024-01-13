@@ -1,10 +1,10 @@
 import reflex as rx
-from wedding import utils
-from wedding.components.main_text import main_text
 
+from wedding import utils
+from wedding.components.icon_section import icon_section
+from wedding.components.main_text import main_text
 from wedding.components.title_section import title_section
 from wedding.routes import IconRoutes as icon
-from wedding.components.icon_section import icon_section
 
 
 def wedding_gifts() -> rx.Component:

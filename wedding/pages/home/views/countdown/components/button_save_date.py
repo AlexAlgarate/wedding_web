@@ -2,7 +2,6 @@ import reflex as rx
 
 from wedding.styles import Size
 from wedding.styles.colors import Color
-from wedding.styles import style as style
 
 
 def button_date(url: str) -> rx.Component:
@@ -19,7 +18,7 @@ def button_date(url: str) -> rx.Component:
             ],
         ),
         padding=Size.DEFAULT.value,
-        background=Color.BUTTON_SAVE_DATE.value,
+        background=Color.BUTTON_BG.value,
         border_radius=Size.MEDIUM_SMALL.value,
         width="100%",
         text_align="center",

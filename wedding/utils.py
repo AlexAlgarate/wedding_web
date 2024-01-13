@@ -19,9 +19,9 @@ is_external: List[bool] = [True, True, False]
 title_main: str = "Web de la boda de los novios"
 title_contact: str = "Página de contacto de la web de la boda"
 description_main: str = (
-    "Parte principal de la web de la boda de los novios para gestionar las invitaciones"
+    "Ruta principal de la web de la boda de los novios para gestionar las invitaciones"
 )
-description_contact: str = "Parte de la web donde aparece cómo contactar con los novios"
+description_contact: str = "Ruta donde aparece cómo contactar con los novios"
 
 
 # Initials navbar
@@ -70,7 +70,7 @@ alt_flamingo_right = "Flamingo looking right"
 alt_flamingo_left = "Flamingo looking left"
 alt_celebration = "Foto del comedor al aire libre de La Agripina."
 
-## SECTION TEXTS  ##
+# SECTION TEXTS
 
 # Celebration
 celebration = "Agripina Eventos y Celebraciones"
@@ -83,4 +83,6 @@ account_number = os.getenv("ACCOUNT_NUMBER")
 # Confirmation
 confirmation = "SE RUEGA CONFIRMACIÓN"
 # Photo
-photo_section = "Publica fotos subiéndolas al albúm compartido de Google Fotos de los novios."
+photo_section = (
+    "Publica fotos subiéndolas al albúm compartido de Google Fotos de los novios."
+)

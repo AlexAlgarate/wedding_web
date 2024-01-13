@@ -4,7 +4,6 @@ import reflex as rx
 from wedding import urls as url
 from wedding import utils
 from wedding.styles import Size
-from wedding.styles import style
 
 
 def image_celebration() -> rx.Component:

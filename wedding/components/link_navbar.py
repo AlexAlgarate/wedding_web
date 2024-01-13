@@ -14,4 +14,6 @@ def link_navbar(title: str, url: str, is_external=True) -> rx.Component:
         href=url,
         is_external=True if is_external else False,
         text_align="start",
+        text_decoration="none",
+        _hover={},
     )
