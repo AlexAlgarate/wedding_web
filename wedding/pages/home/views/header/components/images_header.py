@@ -1,7 +1,7 @@
 import reflex as rx
 
 from wedding import utils as utils
-from wedding.components.images import image_web
+from wedding.components import image_web
 from wedding.styles.style import Size
 
 

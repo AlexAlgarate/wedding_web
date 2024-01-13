@@ -1,8 +1,7 @@
 import reflex as rx
 
 import wedding.utils as utils
-from wedding.components.link_navbar import link_navbar
-from wedding.components.menu_bar import menu_bar
+from wedding.components import link_navbar, menu_bar
 from wedding.routes import IconRoutes as icon
 from wedding.routes import Route
 from wedding.styles import style

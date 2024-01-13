@@ -1,9 +1,7 @@
 import reflex as rx
 
 from wedding import utils
-from wedding.components.icon_section import icon_section
-from wedding.components.main_text import main_text
-from wedding.components.title_section import title_section
+from wedding.components import icon_section, main_text, title_section
 from wedding.routes import IconRoutes as icon
 
 

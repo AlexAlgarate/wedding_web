@@ -1,7 +1,7 @@
 import reflex as rx
 
 from wedding import utils
-from wedding.components.navbar import navbar
+from wedding.components import navbar
 from wedding.pages.contact.components.contact_box import contact_box
 from wedding.routes import Route
 from wedding.styles import Size, style

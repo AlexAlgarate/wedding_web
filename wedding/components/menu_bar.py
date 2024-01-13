@@ -2,7 +2,7 @@ from typing import List
 
 import reflex as rx
 
-from wedding.components.link_navbar import link_navbar
+from wedding.components import link_navbar
 from wedding.styles.colors import Color
 from wedding.styles.style import Size
 

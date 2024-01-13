@@ -1,8 +1,7 @@
 import reflex as rx
 
 from wedding import utils
-from wedding.components.divider import divider
-from wedding.components.navbar import navbar
+from wedding.components import divider, navbar
 from wedding.pages.home.views.bus.bus import bus_service
 from wedding.pages.home.views.celebration.celebration import celebration
 from wedding.pages.home.views.confirmation.confirmation import wedding_confirmation
