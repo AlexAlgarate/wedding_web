@@ -31,7 +31,7 @@ class Size(Enum):
 # Styles
 
 BASE_STYLE = {
-    "font_family": Font.DEFAULT.value,
+    # "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.LIGHT.value,
     "font_size": Size.DEFAULT.value,
     "background_color": Color.BACKGROUND.value + "!important",
