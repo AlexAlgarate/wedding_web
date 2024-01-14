@@ -4,7 +4,7 @@ from wedding.components.header_text import header_text
 from wedding.components.icon_section import icon_section
 from wedding.components.images import image_web
 from wedding.components.link_navbar import link_navbar
-from wedding.components.main_text import main_text
 from wedding.components.menu_bar import menu_bar
 from wedding.components.navbar import navbar
+from wedding.components.text_section import text_section
 from wedding.components.title_section import title_section

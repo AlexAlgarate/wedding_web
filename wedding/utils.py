@@ -73,16 +73,34 @@ alt_celebration = "Foto del comedor al aire libre de La Agripina."
 # SECTION TEXTS
 
 # Celebration
-celebration = "Agripina Eventos y Celebraciones"
+wedding_place = "La Agripina"
 wedding_address = "Cjón. los Romanos, 1 (Punta Umbría, Huelva)"
 wedding_hour = "18:00"
 
 # Gift
 gift = "Vuestra presencia es nuestro mayor regalo, pero si queréis hacer una aportacion este es nuestro número de cuenta"
 account_number = os.getenv("ACCOUNT_NUMBER")
+
 # Confirmation
-confirmation = "SE RUEGA CONFIRMACIÓN"
+button_confirmation = "Se ruega confirmación"
+main_text_confirmation = (
+    "Sabemos que tienes muchas ganas de venir, pero antes...¿confirmas la asistencia?"
+)
+
 # Photo
+title_photo = "Álbum de Fotos"
 photo_section = (
     "Publica fotos subiéndolas al albúm compartido de Google Fotos de los novios."
 )
+button_google_photo = "Abrir álbum"
+
+# Bus destination
+
+destination = "Destino"
+destination_address = "Cjón. los Romanos, 1 (Punta Umbría, Huelva)"
+destination_bus_schedule = "02:00 y 05:00"
+
+# Bus origin
+origin = "Origen"
+origin_address = "El Punto, Av. Martín Alonso Pinzón, 34"
+origin_bus_schedule = "17:00"

@@ -12,7 +12,6 @@ def contact_box(
         rx.text(text, text_align="center"),
         contact_email(email=email),
         contact_phone(phone_number=phone_number),
-        # border=".5px solid",
         border_radius="12px 50px",
         box_shadow="""
         inset 0 -3em 3em rgba(0, 0, 0, 0.1),

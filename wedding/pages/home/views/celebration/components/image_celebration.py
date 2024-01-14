@@ -1,6 +1,5 @@
 import reflex as rx
 
-# from wedding.components.images import image_web
 from wedding import urls as url
 from wedding import utils
 from wedding.styles import Size

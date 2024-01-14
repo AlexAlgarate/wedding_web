@@ -1,23 +1,15 @@
-from typing import Dict
+from typing import Dict, Optional
 
 import reflex as rx
 
-from wedding.styles import Size
 from wedding.styles.fonts import Font, FontWeight
 
 
-def header_text(text: str, style: Dict[str, str]) -> rx.Component:
-    return rx.text(
+def header_text(text: str, style: Optional[Dict[str, str]] = None) -> rx.Component:
+    return rx.heading(
         text,
-        font_size=[
-            Size.MEDIUM_BIGGER.value,
-            Size.MEDIUM_BIGGER.value,
-            Size.VERY_BIG.value,
-            Size.VERY_BIG.value,
-            Size.VERY_BIG.value,
-        ],
+        size="3xl",
         font_weight=FontWeight.MEDIUM.value,
         font_family=Font.TITLE.value,
         width="100%",
-        style=style,
     )

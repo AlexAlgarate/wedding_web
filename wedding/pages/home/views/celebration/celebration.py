@@ -9,7 +9,7 @@ from wedding.routes import IconRoutes as icon
 
 def celebration() -> rx.Component:
     return rx.vstack(
-        title_section("Ceremonia y Celebración"),
+        title_section(title="Ceremonia y Celebración"),
         icon_section(icon=icon.ICON_CELEBRATION.value),
         image_celebration(),
     )

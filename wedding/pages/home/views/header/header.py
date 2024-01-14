@@ -10,7 +10,9 @@ def header() -> rx.Component:
         flamingo_header(),
         rx.vstack(
             rx.hstack(
-                header_text(utils.title_header, style={"None": "none"}),
+                header_text(
+                    utils.title_header,
+                ),
             ),
             rx.hstack(
                 wedding_date_header(list_date=utils.wedding_date),
