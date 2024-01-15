@@ -4,6 +4,7 @@ from wedding.components import divider, icon_section, title_section
 from wedding.routes import IconRoutes as icon
 
 from .components import destination, origin
+from wedding.styles import Size
 
 
 def bus_service() -> rx.Component:
@@ -19,5 +20,6 @@ def bus_service() -> rx.Component:
             rx.spacer(),
             rx.spacer(),
             destination(),
+            margin_bottom=Size.BIG.value,
         ),
     )

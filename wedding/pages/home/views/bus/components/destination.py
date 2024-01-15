@@ -3,19 +3,28 @@ import reflex as rx
 from wedding import utils
 from wedding.components import icon_section
 from wedding.routes import IconRoutes as icon
-from wedding.styles import Size
+from wedding.styles import Size, style
+from wedding.styles.fonts import FontWeight
 
 from .bus_texts import bus_texts
 
 
 def destination() -> rx.Component:
     return rx.vstack(
-        icon_section(icon=icon.ICON_UBICATION.value, width=Size.BIG.value),
+        rx.hstack(
+            icon_section(icon=icon.ICON_UBICATION.value, width=Size.BIG.value),
+            rx.text(
+                "VUELTA",
+                font_weight=FontWeight.MEDIUM_INSIDE_TEXTS.value,
+                font_size=Size.TEXT_SECTION.value,
+            ),
+            align_items="center",
+        ),
         *bus_texts(
             utils.origin,
-            utils.wedding_place,
+            (utils.wedding_place, style.bold_style_bus),
             utils.destination,
-            utils.origin_address,
+            (utils.origin_address, style.bold_style_bus),
             utils.destination_bus_schedule,
         ),
     )

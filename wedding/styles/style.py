@@ -54,3 +54,5 @@ shadow = """
     inset 0 -2em 2em rgba(0, 0, 0, 0.1),
     .2em .2em .8em rgba(0, 0, 0, 0.3)
 """
+
+bold_style_bus = {"font_weight": FontWeight.MEDIUM_INSIDE_TEXTS.value}
