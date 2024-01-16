@@ -3,6 +3,7 @@ from wedding.components.divider import divider
 from wedding.components.header_text import header_text
 from wedding.components.icon_section import icon_section
 from wedding.components.images import image_web
+from wedding.components.lavender import image_lavender
 from wedding.components.link_navbar import link_navbar
 from wedding.components.menu_bar import menu_bar
 from wedding.components.navbar import navbar

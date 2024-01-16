@@ -6,8 +6,6 @@ from wedding.pages.home.views.bus.bus import bus_service
 from wedding.pages.home.views.celebration.celebration import celebration
 from wedding.pages.home.views.confirmation.confirmation import wedding_confirmation
 from wedding.pages.home.views.countdown.countdown import countdown
-
-# from wedding.pages.home.views.gifts.wedding_gifts import wedding_gifts
 from wedding.pages.home.views.header.components.images_header import images_header
 from wedding.pages.home.views.header.header import header
 from wedding.pages.home.views.photo.google_photo import wedding_google_photos
@@ -30,11 +28,7 @@ def index() -> rx.Component:
                 wedding_confirmation(),
                 divider(),
                 celebration(),
-                lavanda(),
-                # divider(),
                 bus_service(),
-                # divider(),
-                # wedding_gifts(),
                 divider(),
                 wedding_google_photos(),
                 max_width=style.MAX_WIDTH,
@@ -44,14 +38,4 @@ def index() -> rx.Component:
             padding=Size.MEDIUM.value,
             style=style.BASE_STYLE,
         ),
-    )
-
-
-def lavanda() -> rx.Component:
-    return rx.image(
-        src="/images/lavanda.png",
-        width="100%",
-        opacity="0.80",
-        margin_top=Size.LARGE.value,
-        height="100%",
     )

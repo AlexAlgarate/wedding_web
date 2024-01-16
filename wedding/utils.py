@@ -73,8 +73,11 @@ alt_celebration = "Foto del comedor al aire libre de La Agripina."
 # SECTION TEXTS
 
 # Celebration
+header_celebration = "Ceremonia y Celebración"
+button_celebration = "Abrir en Google Maps"
 wedding_place = "La Agripina"
-wedding_address = "Cjón. los Romanos, 1 (Punta Umbría, Huelva)"
+wedding_address_street = "Callejón los Romanos, 1"
+wedding_address_province = "Punta Umbría, Huelva"
 wedding_schedule = "18:00"
 
 # Gift
@@ -82,10 +85,9 @@ gift = "Vuestra presencia es nuestro mayor regalo, pero si queréis hacer una ap
 account_number = os.getenv("ACCOUNT_NUMBER")
 
 # Confirmation
-button_confirmation = "Se ruega confirmación"
-main_text_confirmation = (
-    "Sabemos que tienes muchas ganas de venir, pero antes...¿confirmas la asistencia?"
-)
+button_confirmation = "Confirmar asistencia"
+main_text_confirmation = """Seguro que tienes muchas ganas de compartir este día con nosotros.\n
+    ¿Confirmas la asistencia?"""
 
 # Photo
 title_photo = "Álbum de Fotos"
