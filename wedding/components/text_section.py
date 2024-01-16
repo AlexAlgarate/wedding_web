@@ -4,7 +4,7 @@ from wedding.styles import style
 from wedding.styles.style import Size
 
 
-def text_section(text: str) -> rx.Component:
+def text_paragraph(text: str) -> rx.Component:
     return rx.text(
         text,
         max_width=style.MAX_WIDTH,

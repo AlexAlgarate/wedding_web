@@ -75,7 +75,7 @@ alt_celebration = "Foto del comedor al aire libre de La Agripina."
 # Celebration
 wedding_place = "La Agripina"
 wedding_address = "Cjón. los Romanos, 1 (Punta Umbría, Huelva)"
-wedding_hour = "18:00"
+wedding_schedule = "18:00"
 
 # Gift
 gift = "Vuestra presencia es nuestro mayor regalo, pero si queréis hacer una aportacion este es nuestro número de cuenta"

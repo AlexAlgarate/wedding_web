@@ -6,5 +6,7 @@ from wedding.components.images import image_web
 from wedding.components.link_navbar import link_navbar
 from wedding.components.menu_bar import menu_bar
 from wedding.components.navbar import navbar
-from wedding.components.text_section import text_section
+from wedding.components.spacer import spacer
+from wedding.components.text_section import text_paragraph
+from wedding.components.texts_lines import texts_lines
 from wedding.components.title_section import title_section

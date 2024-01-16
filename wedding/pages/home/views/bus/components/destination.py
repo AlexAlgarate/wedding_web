@@ -1,12 +1,10 @@
 import reflex as rx
 
 from wedding import utils
-from wedding.components import icon_section
+from wedding.components import icon_section, texts_lines
 from wedding.routes import IconRoutes as icon
 from wedding.styles import Size, style
 from wedding.styles.fonts import FontWeight
-
-from .bus_texts import bus_texts
 
 
 def destination() -> rx.Component:
@@ -20,7 +18,7 @@ def destination() -> rx.Component:
             ),
             align_items="center",
         ),
-        *bus_texts(
+        *texts_lines(
             utils.origin,
             (utils.wedding_place, style.bold_style_bus),
             utils.destination,

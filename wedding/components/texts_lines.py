@@ -1,8 +1,9 @@
-from typing import Dict, Optional, Tuple, Union
+from typing import Tuple, Union
+
 import reflex as rx
 
 
-def bus_texts(*texts: Union[str, tuple]) -> rx.Component:
+def texts_lines(*texts: Union[str, Tuple[str, str]]) -> rx.Component:
     def process_item(item):
         if isinstance(item, tuple):
             text, style = item

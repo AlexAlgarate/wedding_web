@@ -30,7 +30,8 @@ def index() -> rx.Component:
                 wedding_confirmation(),
                 divider(),
                 celebration(),
-                divider(),
+                lavanda(),
+                # divider(),
                 bus_service(),
                 # divider(),
                 # wedding_gifts(),
@@ -43,4 +44,14 @@ def index() -> rx.Component:
             padding=Size.MEDIUM.value,
             style=style.BASE_STYLE,
         ),
+    )
+
+
+def lavanda() -> rx.Component:
+    return rx.image(
+        src="/images/lavanda.png",
+        width="100%",
+        opacity="0.80",
+        margin_top=Size.LARGE.value,
+        height="100%",
     )
