@@ -14,6 +14,7 @@ class FileRoutes(Enum):
     JS_COUNTDOWN = "/js/countdown.js"
     IMAGE_HEADER_ONE = "/images/vicky_bici_copia.png"
     IMAGE_HEADER_TWO = "/images/vicky_bota_copia.png"
+    AGRIPINA = "/images/agripina.jpg"
 
 
 class IconRoutes(Enum):
@@ -27,3 +28,4 @@ class IconRoutes(Enum):
     ICON_MENU = icon_route("menu_icon")
     ICON_GIFT = icon_route("gift")
     ICON_UBICATION = icon_route("ubication")
+    ICON_BOTH_FLAMINGOS = icon_route("both_flamingos")

@@ -12,7 +12,7 @@ from .components import countdown_text
 def countdown() -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            header_text(utils.countdown_heading, style={"margin_top": "-0.15em"}),
+            header_text(utils.countdown_title, style={"margin_top": "-0.15em"}),
         ),
         rx.hstack(countdown_text()),
         rx.hstack(button(button_name="Guardar fecha", url=url.CALENDAR_HTML)),

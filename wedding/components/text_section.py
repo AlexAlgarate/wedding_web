@@ -8,7 +8,7 @@ def text_paragraph(text: str) -> rx.Component:
     return rx.text(
         text,
         max_width=style.MAX_WIDTH,
-        padding=Size.MEDIUM_SMALL.value,
+        padding=Size.ZERO.value,
         text_align="center",
         font_size=[
             Size.TEXT_SECTION.value,
@@ -17,5 +17,8 @@ def text_paragraph(text: str) -> rx.Component:
             Size.LARGE.value,
             Size.LARGE.value,
         ],
+        text_wrap="pretty",
+        font_style="normal",
+        line_height="normal",
         width="100%",
     )

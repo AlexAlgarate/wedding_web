@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding import urls as url
+from wedding import url
 
 
 def google_maps_box() -> rx.Component:

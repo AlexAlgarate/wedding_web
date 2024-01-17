@@ -3,7 +3,7 @@ from typing import List
 
 from dotenv import load_dotenv
 
-from wedding import urls as url
+from wedding import url
 from wedding.routes import Route
 
 load_dotenv()
@@ -16,7 +16,7 @@ is_external: List[bool] = [True, True, False]
 
 
 # Web descriptions
-title_main: str = "Web de la boda de los novios"
+title_main: str = "Web de la boda de Vicky y Álex"
 title_contact: str = "Página de contacto de la web de la boda"
 description_main: str = (
     "Ruta principal de la web de la boda de los novios para gestionar las invitaciones"
@@ -38,23 +38,22 @@ wedding_date: List[str] = [
 
 
 # Countdown texts
-countdown_heading: str = "¡Cuenta atrás!"
-save_date_button: str = "Guardar fecha"
+countdown_title: str = "¡Cuenta atrás!"
 
 
 # Contact texts
 contact_header: str = "¿Quieres contactar con nosotros?"
-contact_one: str = "Vicky"
-contact_two: str = "Álex"
+# contact_one: str = "Vicky"
+# contact_two: str = "Álex"
 
 
 # Contact Info
-contact_1 = dict(
+contact_bride = dict(
     text="Vicky",
     email=os.getenv("VICKY_EMAIL"),
     phone_number=os.getenv("VICKY_PHONE"),
 )
-contact_2 = dict(
+contact_groom = dict(
     text="Álex",
     email=os.getenv("ALEX_EMAIL"),
     phone_number=os.getenv("ALEX_PHONE"),
@@ -72,37 +71,62 @@ alt_celebration = "Foto del comedor al aire libre de La Agripina."
 
 # SECTION TEXTS
 
+# Confirmation
+confirmation_title = "Confirmación"
+confirmation_button = "Confirmar asistencia"
+confirmation_text = """Seguro que tienes muchas ganas de compartir este día con nosotros.\n
+    ¿Confirmas la asistencia?"""
+
+
 # Celebration
-header_celebration = "Ceremonia y Celebración"
-button_celebration = "Abrir en Google Maps"
+celebration_title = "¿Dónde nos casamos"
+celebration_button = "Abrir en Google Maps"
+celebration_text = "Hemos elegido un sitio muy especial para celebrar este gran día."
 wedding_place = "La Agripina"
 wedding_address_street = "Callejón los Romanos, 1"
 wedding_address_province = "Punta Umbría, Huelva"
 wedding_schedule = "18:00"
 
-# Gift
-gift = "Vuestra presencia es nuestro mayor regalo, pero si queréis hacer una aportacion este es nuestro número de cuenta"
-account_number = os.getenv("ACCOUNT_NUMBER")
 
-# Confirmation
-button_confirmation = "Confirmar asistencia"
-main_text_confirmation = """Seguro que tienes muchas ganas de compartir este día con nosotros.\n
-    ¿Confirmas la asistencia?"""
+# Bus
+but_title = "Servicio de autobús"
+bus_text = "Para facilitar la asistencia habrá un servicio de autobuses tanto a la ida como a la vuelta."
+bus_origin_title = "Ida a la ceremonia"
+bus_origin_text = "Salida 17:00 desde"
+bur_origin_address = "Av. Martín Alonso Pinzón, 34"
 
-# Photo
-title_photo = "Álbum de Fotos"
-photo_section = (
-    "Publica fotos subiéndolas al albúm compartido de Google Fotos de los novios."
-)
-button_google_photo = "Abrir álbum"
+bus_destination_title = "Vuelta a descansar"
+bus_destination_text = "Salidas de La Agripina a las 02:00 y a las 05:00 con destino en"
+origin_address = "El Punto, Av. Martín Alonso Pinzón, 34"
 
-# Bus destination
-
+origin_bus_schedule = "17:00"
 destination = "Destino"
 destination_address = "Cjón. los Romanos, 1 (Punta Umbría, Huelva)"
 destination_bus_schedule = "02:00 y 05:00"
 
-# Bus origin
-origin = "Origen"
-origin_address = "El Punto, Av. Martín Alonso Pinzón, 34"
-origin_bus_schedule = "17:00"
+
+# Photo Album
+title_photo = "Álbum de Fotos"
+photo_section = "¿Quieres recordar este día para siempre?"
+photo_section_2 = (
+    "Comparte tus fotos de la boda subiéndolas al albúm compartido de Google Fotos."
+)
+button_google_photo = "Abrir álbum"
+
+
+# Gift
+gift = "Vuestra presencia es nuestro mayor regalo, pero si queréis hacer una aportacion este es nuestro número de cuenta"
+account_number = os.getenv("ACCOUNT_NUMBER")
+
+
+# Contact Info
+contact_bride = dict(
+    text="Vicky",
+    email=os.getenv("VICKY_EMAIL"),
+    phone_number=os.getenv("VICKY_PHONE"),
+)
+contact_groom = dict(
+    text="Álex",
+    email=os.getenv("ALEX_EMAIL"),
+    phone_number=os.getenv("ALEX_PHONE"),
+)

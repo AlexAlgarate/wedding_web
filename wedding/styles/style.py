@@ -5,12 +5,13 @@ from wedding.styles.fonts import Font, FontWeight
 
 # Constants
 
+
 MAX_WIDTH = "800px"
 FLEX_DIRECTION = ["column", "column", "column", "row", "row"]
 
 
 STYLESHEETS = [
-    "https://fonts.googleapis.com/css2?family=Antic+Didone&family=Alex+Brush&display=swap",
+    "https://fonts.googleapis.com/css2?family=Antic+Didone&family=Alex+Brush&family=Elsie&family=Raleway&display=swap",
     "/styles.css",
 ]
 
@@ -32,27 +33,14 @@ class Size(Enum):
 
 # Styles
 
+
 BASE_STYLE = {
-    # "font_family": Font.DEFAULT.value,
+    "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.LIGHT.value,
     "font_size": Size.DEFAULT.value,
     "background_color": Color.BACKGROUND.value + "!important",
     "color": Color.TEXT_DEFAULT.value + "!important",
 }
 
-
-NAVBAR_STYLE = {
-    "background_color": Color.CONTENT.value,
-    "color": Color.TEXT_DEFAULT.value,
-    "font_family": Font.DEFAULT.value,
-    "font_weight": FontWeight.BOLD.value,
-    "font_size": Size.DEFAULT.value,
-}
-
-
-shadow = """
-    inset 0 -2em 2em rgba(0, 0, 0, 0.1),
-    .2em .2em .8em rgba(0, 0, 0, 0.3)
-"""
 
 bold_style_bus = {"font_weight": FontWeight.MEDIUM_INSIDE_TEXTS.value}

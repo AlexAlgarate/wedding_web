@@ -6,8 +6,6 @@ from wedding.pages.contact.components.contact_box import contact_box
 from wedding.routes import Route
 from wedding.styles import Size, style
 
-contact_one, contact_two = utils.contact_1, utils.contact_2
-
 
 @rx.page(
     route=Route.CONTACT.value,
@@ -22,8 +20,8 @@ def contact() -> rx.Component:
             rx.vstack(
                 rx.text(utils.contact_header, font_size=Size.LARGE.value),
                 rx.vstack(
-                    contact_box(**contact_one),
-                    contact_box(**contact_two),
+                    contact_box(**utils.contact_bride),
+                    contact_box(**utils.contact_groom),
                     width="100%",
                     padding=Size.LARGE.value,
                 ),

@@ -19,7 +19,7 @@ def origin() -> rx.Component:
             align_items="center",
         ),
         *texts_lines(
-            utils.origin,
+            utils.bus_origin_title,
             (utils.origin_address, style.bold_style_bus),
             utils.destination,
             (utils.wedding_place, style.bold_style_bus),
