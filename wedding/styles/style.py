@@ -9,7 +9,6 @@ from wedding.styles.fonts import Font, FontWeight
 MAX_WIDTH = "800px"
 FLEX_DIRECTION = ["column", "column", "column", "row", "row"]
 
-
 STYLESHEETS = [
     "https://fonts.googleapis.com/css2?family=Antic+Didone&family=Alex+Brush&family=Elsie&family=Raleway&display=swap",
     "/styles.css",
@@ -17,13 +16,15 @@ STYLESHEETS = [
 
 
 # Base Sizes
+
+
 class Size(Enum):
     ZERO = "0px !important"
     SMALL = "0.25em"
     MEDIUM_SMALL = "0.5em"
     MEDIUM = "0.8em"
     DEFAULT = "1em"
-    TEXT_SECTION = "1.15em"
+    MAIN_TEXTS = "1.15em"
     LARGE = "1.5em"
     BIG = "2em"
     BIG_TITLES = "2.5em"
@@ -39,8 +40,11 @@ BASE_STYLE = {
     "font_weight": FontWeight.LIGHT.value,
     "font_size": Size.DEFAULT.value,
     "background_color": Color.BACKGROUND.value + "!important",
-    "color": Color.TEXT_DEFAULT.value + "!important",
+    "color": Color.TEXT_DEFAULT.value,
 }
 
-
-bold_style_bus = {"font_weight": FontWeight.MEDIUM_INSIDE_TEXTS.value}
+style_title_bus = {
+    "color": Color.TEXT_DEFAULT.value,
+    "font_weight": FontWeight.BOLD.value,
+    "font_size": "1.25em",
+}

@@ -43,8 +43,6 @@ countdown_title: str = "¡Cuenta atrás!"
 
 # Contact texts
 contact_header: str = "¿Quieres contactar con nosotros?"
-# contact_one: str = "Vicky"
-# contact_two: str = "Álex"
 
 
 # Contact Info
@@ -92,14 +90,14 @@ wedding_schedule = "18:00"
 but_title = "Servicio de autobús"
 bus_text = "Para facilitar la asistencia habrá un servicio de autobuses tanto a la ida como a la vuelta."
 bus_origin_title = "Ida a la ceremonia"
-bus_origin_text = "Salida 17:00 desde"
 bur_origin_address = "Av. Martín Alonso Pinzón, 34"
-
-bus_destination_title = "Vuelta a descansar"
-bus_destination_text = "Salidas de La Agripina a las 02:00 y a las 05:00 con destino en"
 origin_address = "El Punto, Av. Martín Alonso Pinzón, 34"
-
 origin_bus_schedule = "17:00"
+
+bus_destination_title = "Regreso a casa"
+# bus_destination_title = "Vuelta a descansar"
+bus_destination_text = "Salidas de La Agripina a las 02:00 y a las 05:00 con destino en"
+
 destination = "Destino"
 destination_address = "Cjón. los Romanos, 1 (Punta Umbría, Huelva)"
 destination_bus_schedule = "02:00 y 05:00"

@@ -11,3 +11,5 @@ def image_lavender() -> rx.Component:
         margin_top=Size.LARGE.value,
         height="100%",
     )
+
+    # rx.image(src="/bg.svg", width="100%"),

@@ -9,20 +9,33 @@ from wedding.styles.fonts import FontWeight
 
 def destination() -> rx.Component:
     return rx.vstack(
-        rx.hstack(
-            icon_section(icon=icon.ICON_UBICATION.value, width=Size.BIG.value),
-            rx.text(
-                "VUELTA",
-                font_weight=FontWeight.MEDIUM_INSIDE_TEXTS.value,
-                font_size=Size.TEXT_SECTION.value,
-            ),
-            align_items="center",
+        rx.hstack(icon_section(icon=icon.ICON_UBICATION.value, width=Size.BIG.value)),
+        *texts_lines((utils.bus_destination_title, style.style_title_bus)),
+        rx.spacer(),
+        _bus_text_destination(),
+        width="100",
+    )
+
+
+def _bus_text_destination() -> rx.Component:
+    return rx.flex(
+        rx.box("Salidas de La Agripina "),
+        rx.box(
+            "a las ",
+            rx.span("02:00", font_weight=FontWeight.BOLD.value),
+            "y a las ",
+            rx.span("05:00", font_weight=FontWeight.BOLD.value),
         ),
-        *texts_lines(
-            utils.origin_address,
-            (utils.wedding_place, style.bold_style_bus),
-            utils.destination,
-            (utils.origin_address, style.bold_style_bus),
-            utils.destination_bus_schedule,
-        ),
+        rx.box("con destino"),
+        rx.box(rx.span(utils.origin_address, font_weight=FontWeight.BOLD.value)),
+        direction="column",
+        align="center",
+        text_wrap="pretty",
+        font_size=[
+            Size.MAIN_TEXTS.value,
+            Size.MAIN_TEXTS.value,
+            Size.MAIN_TEXTS.value,
+            Size.MAIN_TEXTS.value,
+            Size.MAIN_TEXTS.value,
+        ],
     )

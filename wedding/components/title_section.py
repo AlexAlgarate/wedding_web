@@ -6,7 +6,7 @@ from wedding.styles.fonts import Font, FontHeight, FontWeight
 def title_section(title: str) -> rx.Component:
     return rx.heading(
         title,
-        size="2xl",
+        size="xl",
         font_weight=FontWeight.MEDIUM.value,
         text_align="center",
         width="100%",
