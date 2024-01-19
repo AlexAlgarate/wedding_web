@@ -4,7 +4,7 @@ import wedding.urls as url
 from wedding import utils as utils
 from wedding.components import button, header_text
 from wedding.routes import FileRoutes as file
-from wedding.styles.style import Size
+from wedding.styles import Size
 
 from .components import countdown_text
 

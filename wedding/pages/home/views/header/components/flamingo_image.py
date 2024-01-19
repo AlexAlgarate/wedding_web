@@ -1,7 +1,7 @@
 import reflex as rx
 
 import wedding.utils as utils
-from wedding.routes import IconRoutes as icon
+from wedding import icon
 
 
 def flamingo_header() -> rx.Component:

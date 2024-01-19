@@ -2,7 +2,7 @@ from typing import Dict, Optional
 
 import reflex as rx
 
-from wedding.styles.fonts import Font, FontWeight
+from wedding.styles import Font, FontWeight
 
 
 def header_text(text: str, style: Optional[Dict[str, str]] = None) -> rx.Component:

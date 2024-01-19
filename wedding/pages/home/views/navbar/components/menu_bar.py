@@ -3,8 +3,7 @@ from typing import List
 import reflex as rx
 
 from wedding import icon, utils
-from wedding.styles.colors import Color
-from wedding.styles.style import Size
+from wedding.styles import Color, Size
 
 from .link_navbar import link_navbar
 

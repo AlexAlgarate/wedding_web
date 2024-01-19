@@ -2,15 +2,18 @@ import reflex as rx
 
 from wedding import utils
 from wedding.components import divider, navbar
-from wedding.pages.home.views.bus.bus_service import bus_service
-from wedding.pages.home.views.celebration.celebration import celebration
-from wedding.pages.home.views.confirmation.confirmation import wedding_confirmation
-from wedding.pages.home.views.countdown.countdown import countdown
-from wedding.pages.home.views.header.components.images_header import images_header
-from wedding.pages.home.views.header.header import header
-from wedding.pages.home.views.photo.google_photo import wedding_google_photos
 from wedding.routes import FileRoutes
 from wedding.styles import Size, style
+
+from .views import (
+    bus_service,
+    celebration,
+    countdown,
+    header,
+    images_header,
+    wedding_confirmation,
+    wedding_google_photos,
+)
 
 
 @rx.page(title=utils.title_main, description=utils.description_main)
@@ -25,7 +28,7 @@ def index() -> rx.Component:
                 countdown(),
                 images_header(image=FileRoutes.IMAGE_HEADER_TWO.value),
                 divider(),
-                wedding_confirmation(a=5, b=1),
+                wedding_confirmation(),
                 divider(),
                 celebration(),
                 divider(),

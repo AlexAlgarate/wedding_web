@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding.styles.style import Size
+from wedding.styles import Size
 
 
 def image_web(image: str, alt: str) -> rx.Component:

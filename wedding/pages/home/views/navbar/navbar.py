@@ -1,7 +1,6 @@
 import reflex as rx
 
-from wedding.styles import Size
-from wedding.styles.colors import Color
+from wedding.styles import Color, Size
 
 from .components import initials_navbar
 

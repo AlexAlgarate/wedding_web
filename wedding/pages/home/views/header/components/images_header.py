@@ -2,7 +2,7 @@ import reflex as rx
 
 from wedding import utils as utils
 from wedding.components import image_web
-from wedding.styles.style import Size
+from wedding.styles import Size
 
 
 def images_header(image: str) -> rx.Component:

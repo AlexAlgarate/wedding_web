@@ -1,8 +1,7 @@
 import reflex as rx
 
-from wedding import utils
+from wedding import icon, utils
 from wedding.components import icon_section, text_paragraph, title_section
-from wedding.routes import IconRoutes as icon
 
 
 def wedding_gifts() -> rx.Component:

@@ -1,7 +1,6 @@
 import reflex as rx
 
-from wedding.styles.fonts import FontWeight
-from wedding.styles.style import Size
+from wedding.styles import FontWeight, Size
 
 
 def link_navbar(title: str, url: str, is_external=True) -> rx.Component:

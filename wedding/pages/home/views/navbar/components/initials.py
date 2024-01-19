@@ -1,8 +1,6 @@
 import reflex as rx
 
-from wedding.styles import Size
-from wedding.styles.colors import Color
-from wedding.styles.fonts import Font, FontWeight
+from wedding.styles import Color, Font, FontWeight, Size
 
 
 def _capital_letter_initial(letter: str) -> rx.Component:

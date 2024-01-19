@@ -1,7 +1,6 @@
 import reflex as rx
 
-from wedding.styles import Size
-from wedding.styles.colors import Color
+from wedding.styles import Color, Size
 
 
 def button(button_name: str, url: str) -> rx.Component:

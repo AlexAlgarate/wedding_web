@@ -2,8 +2,7 @@ from typing import Optional
 
 import reflex as rx
 
-from wedding.styles import Size
-from wedding.styles.colors import Color
+from wedding.styles import Color, Size
 
 
 def icon_section(icon: str, width: Optional[str] = None) -> rx.Component:

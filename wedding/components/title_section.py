@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding.styles.fonts import Font, FontHeight, FontWeight
+from wedding.styles import Font, FontHeight, FontWeight
 
 
 def title_section(title: str) -> rx.Component:

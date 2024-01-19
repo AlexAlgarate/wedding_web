@@ -2,8 +2,7 @@ from typing import List
 
 import reflex as rx
 
-from wedding.styles import Size
-from wedding.styles.fonts import Font
+from wedding.styles import Font, Size
 
 
 def wedding_date_header(list_date: List[str]) -> rx.Component:

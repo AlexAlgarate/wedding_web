@@ -1,7 +1,6 @@
 import reflex as rx
 
-from wedding.styles import style
-from wedding.styles.style import Size
+from wedding.styles import Size, style
 
 
 def text_paragraph(text: str) -> rx.Component:
