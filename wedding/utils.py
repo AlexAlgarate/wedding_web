@@ -16,19 +16,16 @@ is_external: List[bool] = [True, True, False]
 
 
 # Web descriptions
-title_main: str = "Web de la boda de Vicky y Álex"
-title_contact: str = "Página de contacto de la web de la boda"
-description_main: str = (
+title_main = "Web de la boda de Vicky y Álex"
+title_contact = "Página de contacto de la web de la boda"
+description_main = (
     "Ruta principal de la web de la boda de los novios para gestionar las invitaciones"
 )
-description_contact: str = "Ruta donde aparece cómo contactar con los novios"
+description_contact = "Ruta donde aparece cómo contactar con los novios"
 
-
-# Initials navbar
-initials_navbar: str = "V & Á"
 
 # Header texts
-title_header: str = "¡Nos casamos!"
+title_header = "¡Nos casamos!"
 wedding_date: List[str] = [
     "30",
     "agosto",
@@ -83,7 +80,6 @@ celebration_text = "Hemos elegido un sitio muy especial para celebrar este gran 
 wedding_place = "La Agripina"
 wedding_address_street = "Callejón los Romanos, 1"
 wedding_address_province = "Punta Umbría, Huelva"
-wedding_schedule = "18:00"
 
 
 # Bus
@@ -96,35 +92,19 @@ origin_bus_schedule = "17:00"
 
 bus_destination_title = "Regreso a casa"
 # bus_destination_title = "Vuelta a descansar"
-bus_destination_text = "Salidas de La Agripina a las 02:00 y a las 05:00 con destino en"
 
-destination = "Destino"
 destination_address = "Cjón. los Romanos, 1 (Punta Umbría, Huelva)"
-destination_bus_schedule = "02:00 y 05:00"
 
 
 # Photo Album
 title_photo = "Álbum de Fotos"
-photo_section = "¿Quieres recordar este día para siempre?"
-photo_section_2 = (
+google_photo_text_one = "¿Quieres recordar este día para siempre?"
+google_photo_text_two = (
     "Comparte tus fotos de la boda subiéndolas al albúm compartido de Google Fotos."
 )
-button_google_photo = "Abrir álbum"
+google_photo_button = "Abrir álbum"
 
 
 # Gift
-gift = "Vuestra presencia es nuestro mayor regalo, pero si queréis hacer una aportacion este es nuestro número de cuenta"
-account_number = os.getenv("ACCOUNT_NUMBER")
-
-
-# Contact Info
-contact_bride = dict(
-    text="Vicky",
-    email=os.getenv("VICKY_EMAIL"),
-    phone_number=os.getenv("VICKY_PHONE"),
-)
-contact_groom = dict(
-    text="Álex",
-    email=os.getenv("ALEX_EMAIL"),
-    phone_number=os.getenv("ALEX_PHONE"),
-)
+gift_text = "Vuestra presencia es nuestro mayor regalo, pero si queréis hacer una aportacion este es nuestro número de cuenta"
+account_number_text = os.getenv("ACCOUNT_NUMBER")

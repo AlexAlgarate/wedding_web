@@ -21,12 +21,3 @@ def divider(section: bool = True, width: str = "65%") -> rx.Component:
             padding_top=Size.SMALL.value,
         ),
     )
-
-
-# def divider(width: str = "65%") -> rx.Component:
-#     return rx.divider(
-#         orientation="horizontal",
-#         variant="solid",
-#         border_color=Color.TEXT_DEFAULT.value,
-#         width=width,
-#     )

@@ -11,7 +11,6 @@ def navbar() -> rx.Component:
             initials_navbar(),
         ),
         box_shadow=f"0px 1px 5px 1px {Color.DEFAULT_OPACITY.value}",
-        width="100%",
         position="sticky",
         padding_top="0.75em",
         padding_bottom=Size.ZERO.value,
@@ -19,4 +18,5 @@ def navbar() -> rx.Component:
         top="0",
         background_color=Color.CONTENT.value,
         class_name="navbar_wedding",
+        width="100%",
     )

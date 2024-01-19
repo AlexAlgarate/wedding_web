@@ -8,6 +8,6 @@ def wedding_gifts() -> rx.Component:
     return rx.vstack(
         title_section(title="Lista de regalos"),
         icon_section(icon=icon.ICON_GIFT.value),
-        text_paragraph(utils.gift),
-        text_paragraph(utils.account_number),
+        text_paragraph(utils.gift_text),
+        text_paragraph(utils.account_number_text),
     )

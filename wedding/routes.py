@@ -28,4 +28,5 @@ class IconRoutes(Enum):
     ICON_MENU = icon_route("menu_icon")
     ICON_GIFT = icon_route("gift")
     ICON_UBICATION = icon_route("ubication")
-    ICON_BOTH_FLAMINGOS = icon_route("both_flamingos")
+    ICON_BOTH_FLAMINGOS = icon_route("both_flamingos_2")
+    # ICON_BOTH_FLAMINGOS_OLD = icon_route("both_flamingos")
