@@ -1,9 +1,13 @@
+from typing import Dict, Optional
+
 import reflex as rx
 
 from wedding.styles import Size
 
 
-def card(*components: rx.Component) -> rx.Component:
+def card(
+    *components: rx.Component, style: Optional[Dict[str, str]] = None
+) -> rx.Component:
     return rx.flex(
         *components,
         direction="column",

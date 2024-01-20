@@ -14,18 +14,5 @@ def celebration() -> rx.Component:
         divider(width="50%", section=False),
         image_celebration(image=FileRoutes.AGRIPINA.value, alt=utils.alt_celebration),
         text_celebration(),
-        # *spacer(spacers=2),
         button(button_name=utils.celebration_button, url=url.AGRIPINA_MAPS_URL),
     )
-
-
-# def celebration() -> rx.Component:
-#     return rx.vstack(
-#         title_section(title=utils.celebration_title),
-#         icon_section(icon=icon.ICON_CELEBRATION.value),
-#         divider(width="50%", section=False),
-#         image_celebration(image=FileRoutes.AGRIPINA.value, alt=utils.alt_celebration),
-#         text_celebration(),
-#         *spacer(spacers=2),
-#         button(button_name=utils.celebration_button, url=url.AGRIPINA_MAPS_URL),
-#     )

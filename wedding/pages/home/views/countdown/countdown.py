@@ -2,23 +2,21 @@ import reflex as rx
 
 import wedding.urls as url
 from wedding import utils as utils
-from wedding.components import button, header_text
+from wedding.components import button, card, title_section
 from wedding.routes import FileRoutes as file
-from wedding.styles import Size
 
 from .components import countdown_text
 
 
 def countdown() -> rx.Component:
-    return rx.vstack(
-        rx.hstack(
-            header_text(utils.countdown_title, style={"margin_top": "-0.15em"}),
+    return card(
+        rx.vstack(
+            title_section(utils.countdown_title),
+            rx.hstack(countdown_text()),
+            rx.hstack(button(button_name="Guardar fecha", url=url.CALENDAR_HTML)),
+            rx.script(
+                src=file.JS_COUNTDOWN.value,
+            ),
         ),
-        rx.hstack(countdown_text()),
-        rx.hstack(button(button_name="Guardar fecha", url=url.CALENDAR_HTML)),
-        rx.script(
-            src=file.JS_COUNTDOWN.value,
-        ),
-        width="100%",
-        margin=Size.BIG.value,
+        style={"width": "100%"},
     )
