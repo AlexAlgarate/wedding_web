@@ -13,8 +13,8 @@ from wedding.components import (
 
 def wedding_google_photos() -> rx.Component:
     return card(
-        title_section(title=utils.title_photo),
         icon_section(icon=icon.ICON_CAMERA.value),
+        title_section(title=utils.title_photo),
         divider(width="50%", section=False),
         text_paragraph(text=utils.google_photo_text_one),
         text_paragraph(text=utils.google_photo_text_two),

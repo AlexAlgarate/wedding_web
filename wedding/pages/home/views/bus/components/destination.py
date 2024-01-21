@@ -21,16 +21,19 @@ def _bus_text_destination() -> rx.Component:
         rx.box(
             "a las ",
             rx.span("02:00", font_weight=FontWeight.BOLD.value),
-            "y a las ",
+            " y a las ",
             rx.span("05:00", font_weight=FontWeight.BOLD.value),
         ),
         rx.box("con destino"),
-        rx.box(
-            rx.span(
-                utils.origin_address,
-                font_weight=FontWeight.BOLD.value,
-                text_wrap="balance",
-            )
+        rx.span(
+            utils.hotel_name,
+            font_weight=FontWeight.BOLD.value,
+            text_wrap="balance",
+        ),
+        rx.span(
+            utils.hotel_address,
+            font_weight=FontWeight.BOLD.value,
+            text_wrap="balance",
         ),
         direction="column",
         align="center",

@@ -9,8 +9,9 @@ from .components import image_celebration, text_celebration
 
 def celebration() -> rx.Component:
     return card(
-        title_section(title=utils.celebration_title),
         icon_section(icon=icon.ICON_CELEBRATION.value),
+        title_section(title=utils.celebration_title),
+        # icon_section(icon=icon.ICON_CELEBRATION.value),
         divider(width="50%", section=False),
         image_celebration(image=FileRoutes.AGRIPINA.value, alt=utils.alt_celebration),
         text_celebration(),

@@ -1,8 +1,11 @@
 from enum import Enum
 
 
-def icon_route(filename: str) -> str:
-    return f"/icons/{filename}.png"
+def icon_route(filename: str, png: bool = False) -> str:
+    if png:
+        return f"/icons/{filename}.png"
+    else:
+        return f"/icons/{filename}.svg"
 
 
 class Route(Enum):
@@ -18,15 +21,8 @@ class FileRoutes(Enum):
 
 
 class IconRoutes(Enum):
-    ICON_FLAMINGO_RIGHT = icon_route("flamingo_right")
-    ICON_FLAMINGO_LEFT = icon_route("flamingo_left")
-    ICON_IMAGE_HOME = icon_route("hogar")
     ICON_BUS = icon_route("bus")
     ICON_CAMERA = icon_route("camera")
-    ICON_CELEBRATION = icon_route("celebration")
+    ICON_CELEBRATION = icon_route("wedding")
     ICON_CONFIRMATION = icon_route("confirmation")
-    ICON_MENU = icon_route("menu_icon")
-    ICON_GIFT = icon_route("gift")
-    ICON_UBICATION = icon_route("ubication")
-    ICON_BOTH_FLAMINGOS = icon_route("both_flamingos_2")
-    # ICON_BOTH_FLAMINGOS_OLD = icon_route("both_flamingos")
+    ICON_UBICATION = icon_route("localization", png=True)

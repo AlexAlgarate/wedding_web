@@ -25,7 +25,10 @@ def _bus_text_origin() -> rx.Component:
             " desde ",
         ),
         rx.box(
-            rx.span(utils.origin_address, font_weight=FontWeight.BOLD.value),
+            rx.span(utils.hotel_name, font_weight=FontWeight.BOLD.value),
+        ),
+        rx.box(
+            rx.span(utils.hotel_address, font_weight=FontWeight.BOLD.value),
         ),
         direction="column",
         align="center",
