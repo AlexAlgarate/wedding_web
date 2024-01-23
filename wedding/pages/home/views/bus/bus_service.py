@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding import icon, utils
+from wedding import utils
 from wedding.components import (
     card,
     divider,
@@ -8,6 +8,7 @@ from wedding.components import (
     text_paragraph,
     title_section,
 )
+from wedding.routes import IconRoutes as icon
 
 from .components import destination, origin
 

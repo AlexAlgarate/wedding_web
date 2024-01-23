@@ -3,7 +3,7 @@ from typing import List
 
 from dotenv import load_dotenv
 
-from wedding import url
+from wedding import urls
 from wedding.routes import Route
 
 load_dotenv()
@@ -11,7 +11,11 @@ load_dotenv()
 
 # Menu items
 menu_items: List[str] = ["Fotos", "Confirmación", "Contacto"]
-url_list: List[str] = [url.GOOGLE_FOTOS_URL, url.CONFIRMATION_URL, Route.CONTACT.value]
+url_list: List[str] = [
+    urls.GOOGLE_FOTOS_URL,
+    urls.CONFIRMATION_URL,
+    Route.CONTACT.value,
+]
 is_external: List[bool] = [True, True, False]
 
 
@@ -37,32 +41,12 @@ wedding_date: List[str] = [
 countdown_title: str = "¡Cuenta atrás!"
 
 
-# Contact texts
-contact_header: str = "¿Quieres contactar con nosotros?"
-
-
-# Contact Info
-contact_bride = dict(
-    text="Vicky",
-    email=os.getenv("VICKY_EMAIL"),
-    phone_number=os.getenv("VICKY_PHONE"),
-)
-contact_groom = dict(
-    text="Álex",
-    email=os.getenv("ALEX_EMAIL"),
-    phone_number=os.getenv("ALEX_PHONE"),
-)
-
-
 # Image descriptions
-alt_image_one = "Foto de Vicky"
-alt_image_two = "Foto de Vicky"
+alt_image_one = "Foto de los novios con un fondo floral de almendros."
 alt_image_home = "Icono de una casa para redireccionar a la página de inicio."
 alt_image_menu = "Icono de una hamburguesa que abre el menú desplegable."
-alt_flamingo_right = "Flamingo looking right"
-alt_flamingo_left = "Flamingo looking left"
-alt_celebration = "Foto del comedor al aire libre de La Agripina."
-
+alt_celebration = "Foto de la entrada de La Agripina."
+label_image_celebration = "Pincha en la imagen para visitar el sitio web de La Agripina"
 # SECTION TEXTS
 
 # Confirmation
@@ -110,3 +94,27 @@ google_photo_button = "Abrir álbum"
 # Gift
 gift_text = "Vuestra presencia es nuestro mayor regalo, pero si queréis hacer una aportacion este es nuestro número de cuenta"
 account_number_text = os.getenv("ACCOUNT_NUMBER")
+
+
+# Contact
+contact_title = "¿Quieres contactar con nosotros?"
+
+
+# Contact Info
+contact_bride = dict(
+    name="Vicky",
+    email=os.getenv("VICKY_EMAIL"),
+    phone_number=os.getenv("VICKY_PHONE"),
+)
+contact_groom = dict(
+    name="Álex",
+    email=os.getenv("ALEX_EMAIL"),
+    phone_number=os.getenv("ALEX_PHONE"),
+)
+contact_button = "Enviar email"
+contact_popover_bride = "Enviar email a Vicky"
+contact_popover_groom = "Enviar email a Álex"
+contact_popover_both = "Enviar email a ambos"
+contact_text_two = (
+    "Mándanos un Whastapp clicando en el icono o un email clicando en el sobre."
+)

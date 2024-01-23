@@ -2,7 +2,8 @@ from typing import List
 
 import reflex as rx
 
-from wedding import icon, utils
+from wedding import utils
+from wedding.routes import IconRoutes as icon
 from wedding.styles import Color, Size
 
 from .link_navbar import link_navbar

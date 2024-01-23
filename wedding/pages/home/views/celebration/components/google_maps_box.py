@@ -1,13 +1,13 @@
 import reflex as rx
 
-from wedding import url
+from wedding import urls
 
 
 def google_maps_box() -> rx.Component:
     return rx.hstack(
         rx.center(
             rx.html(
-                url.maps,
+                urls.maps,
                 width="100%",
             ),
         ),

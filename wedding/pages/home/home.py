@@ -2,15 +2,18 @@ import reflex as rx
 
 from wedding import utils
 from wedding.components import flowers_mobile
+from wedding.routes import FileRoutes
 from wedding.styles import Size, style
 
 from .views import (
     bus_service,
     celebration,
+    contact,
     countdown,
     header,
     navbar,
     wedding_confirmation,
+    wedding_gifts,
     wedding_google_photos,
 )
 
@@ -20,7 +23,7 @@ def index() -> rx.Component:
     return rx.box(
         rx.script("document.documentElement.lang='es'"),
         navbar(),
-        flowers_mobile(image="/images/lavanda_arriba.png"),
+        flowers_mobile(image=FileRoutes.LAVENDER_TOP.value),
         rx.vstack(
             rx.flex(
                 header(),
@@ -28,16 +31,18 @@ def index() -> rx.Component:
                 wedding_confirmation(),
                 celebration(),
                 bus_service(),
+                wedding_gifts(),
                 wedding_google_photos(),
+                contact(),
                 direction="column",
                 gap=Size.LARGE.value,
                 align="center",
-                width="auto",
+                width="100%",
                 max_width=style.MAX_WIDTH,
             ),
             width="auto",
         ),
-        flowers_mobile(image="/images/lavanda_abajo.png", margin_type=False),
+        flowers_mobile(image=FileRoutes.LAVENDER_BOTTOM.value, margin_type=False),
         width="100%",
         style=style.BASE_STYLE,
         align_items="center",

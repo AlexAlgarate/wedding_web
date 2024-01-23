@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding import icon, url, utils
+from wedding import urls, utils
 from wedding.components import (
     button,
     card,
@@ -9,6 +9,7 @@ from wedding.components import (
     text_paragraph,
     title_section,
 )
+from wedding.routes import IconRoutes as icon
 
 
 def wedding_google_photos() -> rx.Component:
@@ -18,5 +19,5 @@ def wedding_google_photos() -> rx.Component:
         divider(width="50%", section=False),
         text_paragraph(text=utils.google_photo_text_one),
         text_paragraph(text=utils.google_photo_text_two),
-        button(button_name=utils.google_photo_button, url=url.GOOGLE_FOTOS_URL),
+        button(button_name=utils.google_photo_button, url=urls.GOOGLE_FOTOS_URL),
     )

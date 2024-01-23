@@ -1,12 +1,16 @@
 import reflex as rx
 
+from wedding import utils
+from wedding.routes import FileRoutes
+
 
 def image_header() -> rx.Component:
     return rx.image(
-        src="/images/almendros.webp",
+        src=FileRoutes.IMAGE_HEADER.value,
         width="100%",
         height="50%",
         box_shadow="0px 8px 5px 1px #F8F8FA inset",
         align_self="stretch",
         padding="-6px 12px",
+        alt=utils.alt_celebration,
     )

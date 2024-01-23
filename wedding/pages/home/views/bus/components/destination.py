@@ -1,7 +1,8 @@
 import reflex as rx
 
-from wedding import icon, utils
+from wedding import utils
 from wedding.components import icon_section, texts_lines
+from wedding.routes import IconRoutes as icon
 from wedding.styles import FontWeight, Size, style
 
 
