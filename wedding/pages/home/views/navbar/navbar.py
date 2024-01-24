@@ -10,7 +10,7 @@ def navbar() -> rx.Component:
         rx.hstack(
             initials_navbar(),
         ),
-        box_shadow=f"0px 1px 5px 1px {Color.DEFAULT_OPACITY.value}",
+        box_shadow=f"0px 1px 5px 1px {Color.PURPLE_OPACITY.value}",
         position="sticky",
         padding_top="0.75em",
         padding_bottom=Size.ZERO.value,

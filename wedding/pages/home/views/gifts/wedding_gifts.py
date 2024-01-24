@@ -12,6 +12,15 @@ from wedding.routes import IconRoutes as icon
 
 
 def wedding_gifts() -> rx.Component:
+    """
+    Create a component for displaying wedding gift information.
+
+    Returns:
+    - rx.Component: A Reflex component representing the wedding gifts section.
+
+    This component includes an icon, title, and paragraphs with information about wedding gifts.
+    """
+
     return card(
         icon_section(icon=icon.ICON_GIFT.value),
         title_section(title="Lista de regalos"),
@@ -19,12 +28,3 @@ def wedding_gifts() -> rx.Component:
         text_paragraph(utils.gift_text),
         text_paragraph(utils.account_number_text),
     )
-
-
-# def wedding_gifts() -> rx.Component:
-#     return rx.vstack(
-#         title_section(title="Lista de regalos"),
-#         icon_section(icon=icon.ICON_GIFT.value),
-#         text_paragraph(utils.gift_text),
-#         text_paragraph(utils.account_number_text),
-#     )

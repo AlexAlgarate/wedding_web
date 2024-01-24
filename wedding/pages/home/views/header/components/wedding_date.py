@@ -2,7 +2,7 @@ from typing import List
 
 import reflex as rx
 
-from wedding.styles import Font, FontWeight
+from wedding.styles import Color, Font, FontWeight
 
 
 def wedding_date_header(list_date: List[str]) -> rx.Component:
@@ -14,4 +14,5 @@ def wedding_date_header(list_date: List[str]) -> rx.Component:
         font_weight=FontWeight.MEDIUM.value,
         font_style="normal",
         text_align="center",
+        color=Color.TITLE.value,
     )

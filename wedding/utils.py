@@ -97,7 +97,7 @@ account_number_text = os.getenv("ACCOUNT_NUMBER")
 
 
 # Contact
-contact_title = "¿Quieres contactar con nosotros?"
+contact_title = "Contacta con nosotros"
 
 
 # Contact Info
@@ -115,6 +115,5 @@ contact_button = "Enviar email"
 contact_popover_bride = "Enviar email a Vicky"
 contact_popover_groom = "Enviar email a Álex"
 contact_popover_both = "Enviar email a ambos"
-contact_text_two = (
-    "Mándanos un Whastapp clicando en el icono o un email clicando en el sobre."
-)
+contact_text_whatsapp = "Ponte en contacto con nosotros a través de Whatsapp haciendo click directamente en el botón"
+contact_text_email = "Si te es más cómodo, puedes mandarnos un correo a:"

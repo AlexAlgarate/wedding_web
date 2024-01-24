@@ -21,7 +21,7 @@ def menu_bar(
 
         if item_name != menu_items[-1]:
             menu_content.append(
-                rx.menu_divider(variant="solid", border_color=Color.TEXT_DEFAULT.value)
+                rx.menu_divider(variant="solid", border_color=Color.DEFAULT_TEXT.value)
             )
     return rx.menu(
         rx.menu_button(rx.image(src=icon.ICON_MENU.value, alt=utils.alt_image_menu)),
@@ -38,8 +38,8 @@ def menu_bar(
             ],
             border="solid",
             border_width="0 1px 1px 0",
-            border_color=Color.TEXT_DEFAULT.value,
-            box_shadow=f"3px 2.5px 8px 1px {Color.DEFAULT_OPACITY.value}",
+            border_color=Color.DEFAULT_TEXT.value,
+            box_shadow=f"3px 2.5px 8px 1px {Color.PURPLE_OPACITY.value}",
             width="100%",
         ),
         close_on_blur=True,

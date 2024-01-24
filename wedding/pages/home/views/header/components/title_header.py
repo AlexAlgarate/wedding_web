@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding.styles import Font, FontWeight
+from wedding.styles import Color, Font, FontWeight
 
 
 def title_header() -> rx.Component:
@@ -9,11 +9,7 @@ def title_header() -> rx.Component:
         _title("casamos!"),
         direction="column",
         align="center",
-        font_weight=FontWeight.MEDIUM.value,
-        font_style="normal",
-        font_family=Font.TITLE.value,
         margin_top="-85px",
-        line_height="normal",
     )
 
 
@@ -24,4 +20,6 @@ def _title(text: str) -> rx.Component:
         font_family=Font.TITLE.value,
         font_weight=FontWeight.MEDIUM.value,
         font_style="normal",
+        line_height="normal",
+        color=Color.TITLE.value,
     )

@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding.styles import Font, FontHeight, FontWeight
+from wedding.styles import Color, Font, FontHeight, FontWeight
 
 
 def title_section(title: str) -> rx.Component:
@@ -13,4 +13,5 @@ def title_section(title: str) -> rx.Component:
         letter_spacing="0.0125rem",
         line_height=FontHeight.MEDIUM.value,
         font_family=Font.TITLE.value,
+        color=Color.TITLE.value,
     )

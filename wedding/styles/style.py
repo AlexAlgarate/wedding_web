@@ -40,11 +40,11 @@ BASE_STYLE = {
     "font_weight": FontWeight.LIGHT.value,
     "font_size": Size.DEFAULT.value,
     "background_color": Color.BACKGROUND.value + "!important",
-    "color": Color.TEXT_DEFAULT.value,
+    "color": Color.DEFAULT_TEXT.value,
 }
 
 style_title_bus = {
-    "color": Color.TEXT_DEFAULT.value,
+    "color": Color.TITLE.value,
     "font_weight": FontWeight.BOLD.value,
     "font_size": "1.25em",
 }
@@ -60,11 +60,11 @@ contact_button_style = dict(
     ],
     padding=Size.DEFAULT.value,
     color=Color.BACKGROUND.value,
-    background=Color.TEXT_DEFAULT.value,
+    background=Color.DEFAULT_TEXT.value,
     border_radius=Size.VERY_BIG.value,
     text_align="center",
     margin_bottom=Size.DEFAULT.value,
-    box_shadow=f"2px 1.5px 3px 1px {Color.DEFAULT_OPACITY.value}",
+    box_shadow=f"2px 1.5px 3px 1px {Color.PURPLE_OPACITY.value}",
     _hover={
         "background": "rgba(80, 69, 135, 0.81)",
         "box_shadow": "2px 1.5px 3px 1px rgba(80, 69, 135, 0.91)",

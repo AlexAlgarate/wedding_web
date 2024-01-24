@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding.styles import Size
+from wedding.styles import Color, Size
 
 
 def countdown_text() -> rx.Component:
@@ -13,4 +13,5 @@ def countdown_text() -> rx.Component:
             Size.BIG.value,
             Size.BIG.value,
         ],
+        color=Color.TITLE.value,
     )
