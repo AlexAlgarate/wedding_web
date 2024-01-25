@@ -16,4 +16,5 @@ def header() -> rx.Component:
             align_self="stretch",
             gap="8px",
         ),
+        id="header_section",
     )

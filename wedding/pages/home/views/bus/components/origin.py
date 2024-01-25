@@ -11,7 +11,7 @@ def origin() -> rx.Component:
         rx.hstack(
             icon_section(icon=icon.ICON_UBICATION.value, width=Size.BIG.value),
         ),
-        *texts_lines((utils.bus_origin_title, style.style_title_bus)),
+        *texts_lines((utils.bus_origin_title, style.BUS_TITLE_SECTION)),
         rx.spacer(),
         _bus_text_origin(),
         width="100%",

@@ -3,8 +3,9 @@ from typing import Dict
 import reflex as rx
 
 from wedding import utils
-from wedding.components import card, icon_section, spacer, text_paragraph, title_section
+from wedding.components import card, icon_section, spacer, text_section, title_section
 from wedding.routes import IconRoutes as icon
+from wedding.styles import Size
 
 from .components import whatsapp_button
 
@@ -25,25 +26,29 @@ def contact() -> rx.Component:
     return card(
         icon_section(icon=icon.ICON_CELEBRATION.value),
         title_section(title=utils.contact_title),
-        text_paragraph(utils.contact_text_whatsapp),
+        text_section(utils.contact_text_whatsapp),
         whatsapp_button(utils.contact_bride),
         whatsapp_button(utils.contact_groom),
-        text_paragraph(utils.contact_text_email),
-        copy_emails(utils.contact_groom, utils.contact_bride),
+        text_section(utils.contact_text_email),
+        emails(utils.contact_bride, utils.contact_groom),
         *spacer(spacers=4),
+        # rx.button("open countdown", on_click=rx.redirect("/#countdown_section")),
+        id="contact_section",
     )
 
 
-class CopyEmails(rx.State):
-    def copy_emails(self, text):
-        return text
-
-
-def copy_emails(*email_info: Dict[str, str]) -> rx.Component:
+def emails(*email_info: Dict[str, str]) -> rx.Component:
     email_text = [
-        rx.button(
-            mail_info["email"], on_click=rx.set_clipboard(f"{mail_info['email']}")
+        rx.text(
+            mail_info["email"],
+            font_size=[
+                "1.2em",
+                Size.LARGE.value,
+                Size.LARGE.value,
+                Size.LARGE.value,
+                Size.LARGE.value,
+            ],
         )
         for mail_info in email_info
     ]
-    return rx.flex(*email_text, direction="column", align="center", gap=8)
+    return rx.flex(*email_text, direction="column", align="center", gap="8px")

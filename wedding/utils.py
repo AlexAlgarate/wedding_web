@@ -46,7 +46,10 @@ alt_image_one = "Foto de los novios con un fondo floral de almendros."
 alt_image_home = "Icono de una casa para redireccionar a la página de inicio."
 alt_image_menu = "Icono de una hamburguesa que abre el menú desplegable."
 alt_celebration = "Foto de la entrada de La Agripina."
+alt_whatsapp = "Icono de Whatsapp"
 label_image_celebration = "Pincha en la imagen para visitar el sitio web de La Agripina"
+
+
 # SECTION TEXTS
 
 # Confirmation

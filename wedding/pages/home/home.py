@@ -18,6 +18,10 @@ from .views import (
 )
 
 
+class State(rx.State):
+    ...
+
+
 @rx.page(title=utils.title_main, description=utils.description_main)
 def index() -> rx.Component:
     return rx.box(
@@ -30,8 +34,8 @@ def index() -> rx.Component:
                 countdown(),
                 wedding_confirmation(),
                 celebration(),
-                bus_service(),
                 wedding_gifts(),
+                bus_service(),
                 wedding_google_photos(),
                 contact(),
                 direction="column",

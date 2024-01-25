@@ -8,7 +8,7 @@ def send_email() -> rx.Component:
     return rx.box(
         rx.popover(
             rx.popover_trigger(
-                rx.button(utils.contact_button, style=style.contact_button_style)
+                rx.button(utils.contact_button, style=style.CONTACT_BUTTON_STYLE)
             ),
             rx.popover_content(
                 rx.popover_body(

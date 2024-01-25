@@ -15,4 +15,5 @@ def celebration() -> rx.Component:
         image_celebration(image=FileRoutes.AGRIPINA.value, alt=utils.alt_celebration),
         text_celebration(),
         button(button_name=utils.celebration_button, url=urls.AGRIPINA_MAPS_URL),
+        id="celebration_section",
     )

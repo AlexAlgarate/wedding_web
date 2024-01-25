@@ -9,7 +9,7 @@ from wedding.styles import FontWeight, Size, style
 def destination() -> rx.Component:
     return rx.vstack(
         rx.hstack(icon_section(icon=icon.ICON_UBICATION.value, width=Size.BIG.value)),
-        *texts_lines((utils.bus_destination_title, style.style_title_bus)),
+        *texts_lines((utils.bus_destination_title, style.BUS_TITLE_SECTION)),
         rx.spacer(),
         _bus_text_destination(),
         width="100",

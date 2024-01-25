@@ -19,4 +19,5 @@ def countdown() -> rx.Component:
             ),
         ),
         style={"width": "100%"},
+        id="countdown_section",
     )
