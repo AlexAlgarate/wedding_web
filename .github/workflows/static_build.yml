@@ -26,7 +26,7 @@ jobs:
 
       - name: Run build script
         run: |
-          chmod +x ./wedding_web/remote_build.sh
+          chmod +x ./remote_build.sh
           ./wedding_web/remote_build.sh
 
       - name: Commit and Push changes
