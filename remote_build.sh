@@ -1,7 +1,7 @@
-cd python_web
-python -m venv .venv
+ls
+# python -m venv .venv
 source .venv/Scripts/activate
-python.exe -m pip install --upgrade pip
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 rm -fr public
 reflex init
