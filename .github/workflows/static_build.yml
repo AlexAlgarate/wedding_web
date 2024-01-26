@@ -38,7 +38,7 @@ jobs:
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Update static build
+          commit_message: Update static build for Vercel
           commit_user_name: Alex Algarate [GitHub Actions]
           commit_user_email: alex.algarate@gmail.com
           commit_author: AlexAlgarate <alex.algarate@gmail.com>
