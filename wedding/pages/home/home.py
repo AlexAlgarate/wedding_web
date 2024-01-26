@@ -18,8 +18,8 @@ from .views import (
 )
 
 
-class State(rx.State):
-    ...
+# class State(rx.State):
+#     ...
 
 
 @rx.page(title=utils.title_main, description=utils.description_main)
