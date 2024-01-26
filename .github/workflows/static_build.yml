@@ -14,6 +14,12 @@ jobs:
 
     permissions:
       contents: write
+    env:
+      ACCOUNT_NUMBER: ${{ secrets.ACCOUNT_NUMBER }}
+      VICKY_PHONE: ${{ secrets.VICKY_PHONE }}
+      VICKY_EMAIL: ${{ secrets.VICKY_EMAIL }}
+      ALEX_PHONE: ${{ secrets.ALEX_PHONE }}
+      ALEX_EMAIL: ${{ secrets.ALEX_EMAIL }}
 
     steps:
       - name: Checkout repo
