@@ -9,7 +9,7 @@ jobs:
   build:
     if: github.repository == 'AlexAlgarate/wedding_web'
     runs-on: ubuntu-latest
-
+    environment: production
     permissions:
       contents: write
     env:
@@ -30,6 +30,10 @@ jobs:
 
       - name: Run build script
         run: |
+          echo "VICKY_PHONE: $VICKY_PHONE"
+          echo "VICKY_EMAIL: $VICKY_EMAIL"
+          echo "ALEX_PHONE: $ALEX_PHONE"
+          echo "ALEX_EMAIL: $ALEX_EMAIL"
           chmod +x ./remote_build.sh
           ./remote_build.sh
 
