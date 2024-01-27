@@ -20,7 +20,9 @@ def wedding_gifts() -> rx.Component:
         title_section(title="Lista de regalos"),
         divider(width="50%", section=False),
         text_section(utils.gift_text),
-        text_section(utils.account_number_text),
-        rx.button("JUAN PAGAME", color="blue", background="red"),
+        text_section(
+            utils.account_number_text,
+            font_weight="600",
+        ),
         id="gift_section",
     )

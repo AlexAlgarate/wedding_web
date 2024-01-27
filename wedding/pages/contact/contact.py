@@ -9,7 +9,8 @@ from wedding.routes import Route
     title=utils.title_contact,
     description=utils.description_contact,
 )
-def contact() -> rx.Component: ...
+def contact() -> rx.Component:
+    ...
 
 
 #     return rx.vstack(

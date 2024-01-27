@@ -3,7 +3,7 @@ import reflex as rx
 from wedding import urls, utils
 
 
-def image_celebration(image: str, alt: str) -> rx.Component:
+def image_celebration(image: str) -> rx.Component:
     """
     Create a linked celebration image component with a tooltip.
 
@@ -22,12 +22,11 @@ def image_celebration(image: str, alt: str) -> rx.Component:
         rx.tooltip(
             rx.image(
                 src=image,
-                border_radius="20px",
                 box_shadow="""
                 inset 0 -3em 3em rgba(0, 0, 0, 0.1),
                 0.3em 0.3em 1em rgba(0, 0, 0, 0.3)
                 """,
-                alt=alt,
+                alt=utils.alt_celebration,
                 width="100%",
             ),
             label=utils.label_image_celebration,

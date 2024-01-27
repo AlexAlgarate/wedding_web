@@ -101,19 +101,15 @@ TITLE_STYLE = {
 }
 
 
-TEXT_WHATSAPP_STYLE = {
+SECONDARY_BUTTON_STYLE = {
     "color": Color.TITLE.value,
     "text_align": "center",
     "font_variant_numeric": "lining-nums proportional-nums",
-}
-WHATSAPP_COMP_STYLE = {
     "padding": "8px 24px 8px 16px",
     "justify_content": "center",
     "align_items": "center",
     "gap": "8px",
     "align_self": "stretch",
-}
-BUTTON_WHATSAPP_STYLE = {
     "border_radius": "5px",
     "border": "2px solid #4F1F7E",
     "background": Color.BACKGROUND.value,
