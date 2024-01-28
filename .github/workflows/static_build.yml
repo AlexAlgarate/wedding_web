@@ -28,6 +28,11 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Sort imports
+        uses: isort/isort-action@master
+        with:
+            requirementsFiles: "requirements.txt"
+
       - name: Run build script
         run: |
           chmod +x ./remote_build.sh

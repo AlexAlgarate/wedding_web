@@ -1,7 +1,8 @@
 from typing import Optional
+
 import reflex as rx
 
-from wedding.styles import style, FontWeight
+from wedding.styles import FontWeight, style
 
 
 def text_section(

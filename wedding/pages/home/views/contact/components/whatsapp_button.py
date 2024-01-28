@@ -2,8 +2,8 @@ from typing import Dict
 
 import reflex as rx
 
-from wedding.routes import IconRoutes as icon
 from wedding.components import secondary_button
+from wedding.routes import IconRoutes as icon
 
 
 def create_whatsapp_button(*contacts: Dict[str, str]) -> rx.Component:

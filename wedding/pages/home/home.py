@@ -17,7 +17,6 @@ from .views import (
     wedding_google_photos,
 )
 
-
 # class State(rx.State):
 #     ...
 
