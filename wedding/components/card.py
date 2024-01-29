@@ -23,6 +23,7 @@ def card(
 
     return rx.flex(
         *components,
+        width="85%",
         direction="column",
         align="center",
         gap="8px",

@@ -23,8 +23,7 @@ def image_celebration(image: str) -> rx.Component:
             rx.image(
                 src=image,
                 box_shadow="""
-                inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-                0.3em 0.3em 1em rgba(0, 0, 0, 0.3)
+                1px 1px 4px 1px rgba(0, 0, 0, 0.3)
                 """,
                 alt=utils.alt_celebration,
                 width="100%",

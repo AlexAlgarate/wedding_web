@@ -8,12 +8,11 @@ from wedding.styles import Size, style
 from .views import (
     bus_service,
     celebration,
-    contact,
+    contact,  # wedding_gifts,
     countdown,
     header,
     navbar,
     wedding_confirmation,
-    wedding_gifts,
     wedding_google_photos,
 )
 
@@ -33,10 +32,10 @@ def index() -> rx.Component:
                 countdown(),
                 wedding_confirmation(),
                 celebration(),
-                wedding_gifts(),
+                # wedding_gifts(),
                 bus_service(),
-                wedding_google_photos(),
                 contact(),
+                wedding_google_photos(),
                 direction="column",
                 gap=Size.LARGE.value,
                 align="center",

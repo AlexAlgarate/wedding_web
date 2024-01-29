@@ -31,3 +31,4 @@ class IconRoutes(Enum):
     ICON_WHATSAPP = icon_route("whatsapp")
     ICON_EMAIL = icon_route("email")
     # ICON_WHATSAPP = icon_route("whatsapp", png=True)  # png file
+    ICON_PHONE = icon_route("phone", png=True)
