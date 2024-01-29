@@ -21,7 +21,8 @@ def flowers_mobile(image: str, margin_type: bool = True) -> rx.Component:
                 width="100%",
                 height="100%",
                 flex_shrink="0",
-                margin_bottom="-150px",
+                position="relative",
+                margin_bottom="-120px",
                 z_index="990",
             ),
             rx.image(
@@ -29,7 +30,7 @@ def flowers_mobile(image: str, margin_type: bool = True) -> rx.Component:
                 width="100%",
                 height="100%",
                 flex_shrink="0",
-                margin_top="-100px",
+                margin_top="-139px",
                 z_index="990",
             ),
         )
