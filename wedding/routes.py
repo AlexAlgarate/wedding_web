@@ -15,10 +15,12 @@ class Route(Enum):
 
 class FileRoutes(Enum):
     JS_COUNTDOWN = "/js/countdown.js"
-    IMAGE_HEADER = "/images/almendros.webp"
-    AGRIPINA = "/images/agripina.jpg"
-    LAVENDER_TOP = "/images/lavender_top.png"
-    LAVENDER_BOTTOM = "/images/lavender_bottom.png"
+    IMAGE_HEADER = "/images/almendros_.png"
+    # IMAGE_HEADER = "/images/almendros.webp"
+    IMAGE_AGRIPINA = "/images/agripina.jpg"
+    IMAGE_LAVENDER_TOP = "/images/lavender_top.png"
+    IMAGE_LAVENDER_BOTTOM = "/images/lavender_bottom.png"
+    IMAGE_LEAFS_SECTION = "/images/leafs.svg"
 
 
 class IconRoutes(Enum):
@@ -30,5 +32,4 @@ class IconRoutes(Enum):
     ICON_GIFT = icon_route("regalo", png=True)
     ICON_WHATSAPP = icon_route("whatsapp")
     ICON_EMAIL = icon_route("email")
-    # ICON_WHATSAPP = icon_route("whatsapp", png=True)  # png file
-    ICON_PHONE = icon_route("phone", png=True)
+    ICON_PHONE = icon_route("phone")

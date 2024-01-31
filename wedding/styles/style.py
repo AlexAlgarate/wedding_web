@@ -44,7 +44,7 @@ BASE_STYLE = {
 }
 
 BUS_TITLE_SECTION = {
-    "color": Color.TITLE.value,
+    "color": Color.TITLES.value,
     "font_weight": FontWeight.BOLD.value,
     "font_size": "1.25em",
 }
@@ -97,15 +97,15 @@ TITLE_STYLE = {
     "letter_spacing": "0.0125rem",
     "line_height": FontHeight.MEDIUM.value,
     "font_family": Font.TITLE.value,
-    "color": Color.TITLE.value,
+    "color": Color.TITLES.value,
 }
 
 
 SECONDARY_BUTTON_STYLE = {
-    "color": Color.TITLE.value,
+    "color": Color.TITLES.value,
     "text_align": "center",
     "font_variant_numeric": "lining-nums proportional-nums",
-    "padding": "8px 24px 8px 16px",
+    "padding": "8px 24px",
     "justify_content": "center",
     "align_items": "center",
     "gap": "8px",

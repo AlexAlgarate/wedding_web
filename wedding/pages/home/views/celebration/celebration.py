@@ -1,7 +1,12 @@
 import reflex as rx
 
 from wedding import urls, utils
-from wedding.components import icon_section, secondary_button, title_section
+from wedding.components import (
+    icon_section,
+    secondary_button,
+    text_section,
+    title_section,
+)
 from wedding.routes import FileRoutes
 from wedding.routes import IconRoutes as icon
 
@@ -13,7 +18,8 @@ def celebration() -> rx.Component:
         rx.flex(
             icon_section(icon=icon.ICON_CELEBRATION.value),
             title_section(title=utils.celebration_title),
-            image_celebration(image=FileRoutes.AGRIPINA.value),
+            text_section(utils.celebration_text),
+            image_celebration(image=FileRoutes.IMAGE_AGRIPINA.value),
             text_celebration(),
             secondary_button(
                 button_name=utils.celebration_button,

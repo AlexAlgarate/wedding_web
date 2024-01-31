@@ -37,10 +37,6 @@ wedding_date: List[str] = [
 ]
 
 
-# Countdown texts
-countdown_title: str = "¡Cuenta atrás!"
-
-
 # Image descriptions
 alt_image_one = "Foto de los novios con un fondo floral de almendros."
 alt_image_home = "Icono de una casa para redireccionar a la página de inicio."
@@ -49,15 +45,21 @@ alt_celebration = "Foto de la entrada de La Agripina."
 alt_image_partners = "Foto principal de los novios."
 alt_whatsapp = "Icono de Whatsapp"
 label_image_celebration = "Pincha en la imagen para visitar el sitio web de La Agripina"
-
+alt_leafs = "Foto de unas hojas amarillas."
 
 # SECTION TEXTS
+# Countdown texts
+countdown_title: str = "¡Cuenta atrás!"
+countdown_text = (
+    "Nos conocimos, nos enamoramos y ahora estamos a punto de elegirnos para siempre"
+)
+countdown_button = "Guardar fecha"
 
 # Confirmation
 confirmation_title = "Confirmación"
 confirmation_button = "Confirmar asistencia"
 confirmation_text = """Seguro que tienes muchas ganas de compartir este día con nosotros.\n
-    ¿Confirmas la asistencia?"""
+    ¿Confirmas tu asistencia?"""
 
 
 # Celebration

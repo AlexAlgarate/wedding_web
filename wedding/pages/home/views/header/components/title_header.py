@@ -21,5 +21,5 @@ def _title(text: str) -> rx.Component:
         font_weight=FontWeight.MEDIUM.value,
         font_style="normal",
         line_height="normal",
-        color=Color.TITLE.value,
+        color=Color.TITLES.value,
     )

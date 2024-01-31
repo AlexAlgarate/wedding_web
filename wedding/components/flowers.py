@@ -1,7 +1,10 @@
 import reflex as rx
 
+from wedding import utils
+from wedding.routes import FileRoutes as file
 
-def flowers_mobile(image: str, margin_type: bool = True) -> rx.Component:
+
+def lavender_flowers(image: str, margin_type: bool = True) -> rx.Component:
     """
     Create a mobile-only component displaying an image with optional margin adjustments.
 
@@ -33,5 +36,28 @@ def flowers_mobile(image: str, margin_type: bool = True) -> rx.Component:
                 margin_top="-139px",
                 z_index="990",
             ),
+        )
+    )
+
+
+def flowers_between_section() -> rx.Component:
+    """
+    Create a mobile-only component displaying an image with optional margin adjustments.
+
+    Parameters:
+    - image (str): The path or URL of the image.
+    - margin_type (bool): If True, applies a specific margin for the image.
+
+    Returns:
+    - rx.Component: A Reflex component representing the mobile-only image.
+    """
+
+    return rx.mobile_only(
+        rx.image(
+            src=file.IMAGE_LEAFS_SECTION.value,
+            width="100%",
+            height="100%",
+            flex_shrink="0",
+            alt=utils.alt_leafs,
         )
     )

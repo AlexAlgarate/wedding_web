@@ -16,5 +16,6 @@ class FontWeight(Enum):
 class FontHeight(Enum):
     SMALL = "0.5em"
     DEFAULT = "1em"
+    NORMAL = "normal"
     MEDIUM = "1.25em"
     BIG = "2em"

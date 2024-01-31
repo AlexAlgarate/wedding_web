@@ -26,7 +26,7 @@ def initials_navbar() -> rx.Component:
         _capital_letter_initial("Á"),
         height="100%",
         font_weight=FontWeight.MEDIUM.value,
-        color=Color.TITLE.value,
+        color=Color.TITLES.value,
         font_family=Font.TITLE.value,
         letter_spacing="5px",
     )
