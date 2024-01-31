@@ -1,17 +1,7 @@
 import reflex as rx
 
-from wedding.styles import Color
-from wedding.styles.fonts import Font, FontHeight, FontWeight
+from wedding.styles import style
 
 
-def element_date(element: str) -> rx.Component:
-    return rx.text(
-        element,
-        color=Color.TEXT_COUNTDOWN.value,
-        text_align="center",
-        font_family=Font.DEFAULT.value,
-        font_size="16px",
-        font_style="normal",
-        font_weight=FontWeight.MEDIUM_INSIDE_TEXTS.value,
-        line_height=FontHeight.NORMAL.value,
-    )
+def element_date(text_date: str) -> rx.Component:
+    return rx.text(text_date, style=style.COUNTDOWN_TEXT_STYLE)
