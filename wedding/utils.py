@@ -50,9 +50,7 @@ alt_leafs = "Foto de unas hojas amarillas."
 # SECTION TEXTS
 # Countdown texts
 countdown_title: str = "¡Cuenta atrás!"
-countdown_text = (
-    "Nos conocimos, nos enamoramos y ahora estamos a punto de elegirnos para siempre"
-)
+countdown_text = "Nos conocimos, nos enamoramos y ahora estamos a punto de elegirnos para siempre"
 countdown_button = "Guardar fecha"
 
 # Confirmation
@@ -73,7 +71,9 @@ wedding_address_province = "Punta Umbría, Huelva"
 
 # Bus
 but_title = "Servicio de autobús"
-bus_text = "Para facilitar la asistencia habrá un servicio de autobuses tanto a la ida como a la vuelta."
+bus_text = (
+    "Para facilitar la asistencia habrá un servicio de autobuses tanto a la ida como a la vuelta."
+)
 bus_origin_title = "Ida a la ceremonia"
 bur_origin_address = "Av. Martín Alonso Pinzón, 34"
 hotel_name = "Senator Huelva Hotel"
@@ -121,5 +121,7 @@ contact_button = "Enviar email"
 contact_popover_bride = "Enviar email a Vicky"
 contact_popover_groom = "Enviar email a Álex"
 contact_popover_both = "Enviar email a ambos"
-contact_text_whatsapp = "Ponte en contacto con nosotros a través de Whatsapp haciendo click directamente en el botón"
+contact_text_whatsapp = (
+    "Ponte en contacto con nosotros a través de Whatsapp haciendo click directamente en el botón"
+)
 contact_text_email = "Si te es más cómodo, puedes mandarnos un correo a:"

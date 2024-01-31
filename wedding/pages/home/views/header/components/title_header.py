@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding.styles import Color, Font, FontWeight
+from wedding.styles import style
 
 
 def title_header() -> rx.Component:
@@ -14,12 +14,4 @@ def title_header() -> rx.Component:
 
 
 def _title(text: str) -> rx.Component:
-    return rx.heading(
-        text,
-        size="2xl",
-        font_family=Font.TITLE.value,
-        font_weight=FontWeight.MEDIUM.value,
-        font_style="normal",
-        line_height="normal",
-        color=Color.TITLES.value,
-    )
+    return rx.heading(text, size="2xl", style=style.TEXT_HEADER_STYLE)

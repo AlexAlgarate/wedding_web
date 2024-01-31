@@ -101,6 +101,27 @@ TITLE_STYLE = {
 }
 
 
+MAIN_BUTTON_STYLE = {
+    "width": "100%",
+    "font_size": [
+        Size.DEFAULT.value,
+        Size.DEFAULT.value,
+        Size.DEFAULT.value,
+        Size.LARGE.value,
+        Size.LARGE.value,
+    ],
+    "padding": "8px 24px",
+    "color": Color.BACKGROUND.value,
+    "background": Color.BUTTONS.value,
+    "border_radius": "5px",
+    "border": "2px solid #4F1F7E",
+    "text_align": "center",
+    "margin_bottom": Size.DEFAULT.value,
+    "_hover": {
+        "background": "rgba(80, 69, 135, 0.91)",
+    },
+}
+
 SECONDARY_BUTTON_STYLE = {
     "color": Color.TITLES.value,
     "text_align": "center",
@@ -113,4 +134,70 @@ SECONDARY_BUTTON_STYLE = {
     "border_radius": "5px",
     "border": "2px solid #4F1F7E",
     "background": Color.BACKGROUND.value,
+    "font_size": [
+        Size.DEFAULT.value,
+        Size.DEFAULT.value,
+        Size.DEFAULT.value,
+        Size.LARGE.value,
+        Size.LARGE.value,
+    ],
+}
+
+
+COUNTDOWN_NUMBERS_STYLE = {
+    "color": Color.NUMBERS_COUNTDOWN.value,
+    "width": "100%",
+    "height": "100%",
+    # "border": "2px",
+    "font_family": Font.TITLE.value,
+    "text_align": "center",
+    "font_style": "normal",
+    "font_weight": FontWeight.MEDIUM_INSIDE_TEXTS.value,
+    "line_height": FontHeight.NORMAL.value,
+    "font_size": [
+        Size.BIG.value,
+        Size.BIG.value,
+        Size.BIG.value,
+        Size.BIG.value,
+        Size.BIG.value,
+    ],
+}
+
+
+COUNTDOWN_TEXT_STYLE = {
+    "color": Color.TEXT_COUNTDOWN.value,
+    "text_align": "center",
+    "font_family": Font.DEFAULT.value,
+    "font_size": "16px",
+    "font_style": "normal",
+    "font_weight": FontWeight.MEDIUM_INSIDE_TEXTS.value,
+    "line_height": FontHeight.NORMAL.value,
+}
+
+
+TEXT_HEADER_STYLE = {
+    "font_family": Font.TITLE.value,
+    "font_weight": FontWeight.MEDIUM.value,
+    "font_style": "normal",
+    "line_height": "normal",
+    "color": Color.TITLES.value,
+}
+
+
+IMAGE_HEADER = {
+    "width": "100%",
+    "height": "50%",
+    "box_shadow": "0px 8px 5px 1px #F8F8FA inset",
+    "align_self": "stretch",
+    "padding": "-6px 12px",
+}
+
+
+WEDDING_DATE_HEADER = {
+    "font_family": Font.TITLE.value,
+    "width": "100%",
+    "font_weight": FontWeight.MEDIUM.value,
+    "font_style": "normal",
+    "text_align": "center",
+    "color": Color.TITLES.value,
 }

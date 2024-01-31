@@ -49,7 +49,8 @@ def index() -> rx.Component:
         ),
         footer(),
         lavender_flowers(
-            image=FileRoutes.IMAGE_LAVENDER_BOTTOM.value, margin_type=False
+            image=FileRoutes.IMAGE_LAVENDER_BOTTOM.value,
+            margin_type=False,
         ),
         width="100%",
         style=style.BASE_STYLE,

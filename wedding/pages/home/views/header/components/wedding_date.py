@@ -2,17 +2,8 @@ from typing import List
 
 import reflex as rx
 
-from wedding.styles import Color, Font, FontWeight
+from wedding.styles import style
 
 
 def wedding_date_header(list_date: List[str]) -> rx.Component:
-    return rx.heading(
-        " ".join(list_date),
-        size="2xl",
-        font_family=Font.TITLE.value,
-        width="100%",
-        font_weight=FontWeight.MEDIUM.value,
-        font_style="normal",
-        text_align="center",
-        color=Color.TITLES.value,
-    )
+    return rx.heading(" ".join(list_date), size="2xl", style=style.WEDDING_DATE_HEADER)
