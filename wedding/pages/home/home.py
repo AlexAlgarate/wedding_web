@@ -1,7 +1,11 @@
 import reflex as rx
 
 from wedding import utils
-from wedding.components import farewell_message, flowers_between_section, lavender_flowers
+from wedding.components import (
+    farewell_message,
+    flowers_between_section,
+    lavender_flowers,
+)
 from wedding.routes import FileRoutes
 from wedding.styles import style
 
