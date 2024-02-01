@@ -4,8 +4,6 @@ from wedding.styles.colors import Color
 from wedding.styles.fonts import Font, FontHeight, FontWeight
 
 # Constants
-
-
 MAX_WIDTH = "800px"
 FLEX_DIRECTION = ["column", "column", "column", "row", "row"]
 
@@ -15,9 +13,7 @@ STYLESHEETS = [
 ]
 
 
-# Base Sizes
-
-
+# Styles
 class Size(Enum):
     ZERO = "0px !important"
     SMALL = "0.25em"
@@ -32,9 +28,6 @@ class Size(Enum):
     VERY_BIG = "4em"
 
 
-# Styles
-
-
 BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.LIGHT.value,
@@ -43,32 +36,27 @@ BASE_STYLE = {
     "color": Color.DEFAULT_TEXT.value,
 }
 
-BUS_TITLE_SECTION = {
-    "color": Color.TITLES.value,
-    "font_weight": FontWeight.BOLD.value,
-    "font_size": "1.25em",
+
+NAVBAR_STYLE = {
+    "box_shadow": f"0px 1px 5px 1px {Color.PURPLE_OPACITY.value}",
+    "position": "sticky",
+    "padding_top": "0.75em",
+    "padding_bottom": Size.ZERO.value,
+    "z_index": "5",
+    "justify_content": "center",
+    "justify": "center",
+    "top": "0",
+    "background_color": Color.CONTENT.value,
+    "width": "100%",
 }
 
-CONTACT_BUTTON_STYLE = {
-    "width": "100%",
-    "font_size": [
-        Size.DEFAULT.value,
-        Size.DEFAULT.value,
-        Size.DEFAULT.value,
-        Size.LARGE.value,
-        Size.LARGE.value,
-    ],
-    "padding": Size.DEFAULT.value,
-    "color": Color.BACKGROUND.value,
-    "background": Color.DEFAULT_TEXT.value,
-    "border_radius": Size.VERY_BIG.value,
-    "text_align": "center",
-    "margin_bottom": Size.DEFAULT.value,
-    "box_shadow": f"2px 1.5px 3px 1px {Color.PURPLE_OPACITY.value}",
-    "_hover": {
-        "background": "rgba(80, 69, 135, 0.81)",
-        "box_shadow": "2px 1.5px 3px 1px rgba(80, 69, 135, 0.91)",
-    },
+
+INITIALS_NAVBAR_STYLE = {
+    "height": "100%",
+    "font_weight": FontWeight.MEDIUM.value,
+    "color": Color.TITLES.value,
+    "font_family": Font.TITLE.value,
+    "letter_spacing": "5px",
 }
 
 
@@ -88,6 +76,7 @@ TEXT_SECTION_STYLE = {
     "line_height": "normal",
     "width": "100%",
 }
+
 
 TITLE_STYLE = {
     "size": "xl",
@@ -122,6 +111,14 @@ MAIN_BUTTON_STYLE = {
     },
 }
 
+
+BUS_TITLE_SECTION = {
+    "color": Color.TITLES.value,
+    "font_weight": FontWeight.BOLD.value,
+    "font_size": "1.25em",
+}
+
+
 SECONDARY_BUTTON_STYLE = {
     "color": Color.TITLES.value,
     "text_align": "center",
@@ -141,6 +138,15 @@ SECONDARY_BUTTON_STYLE = {
         Size.LARGE.value,
         Size.LARGE.value,
     ],
+}
+
+
+COUNTDOWN_BAR_STYLE = {
+    "padding": "16px 0px",
+    "gap": "1.5em",
+    "align_self": "stretch",
+    "background": Color.COUNTDOWN_BACKGROUND.value,
+    "width": "100%",
 }
 
 
@@ -200,4 +206,15 @@ WEDDING_DATE_HEADER = {
     "font_style": "normal",
     "text_align": "center",
     "color": Color.TITLES.value,
+}
+
+
+BOTTOM_TEXT_STYLE = {
+    "font_family": Font.TITLE.value,
+    "font_weight": FontWeight.MEDIUM.value,
+    "font_style": "normal",
+    "line_height": "normal",
+    "color": Color.TITLES.value,
+    "position": "relative",
+    "top": "50px",
 }

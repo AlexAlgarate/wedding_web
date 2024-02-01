@@ -1,7 +1,7 @@
 import reflex as rx
 
 from wedding import utils
-from wedding.components import flowers_between_section, footer, lavender_flowers
+from wedding.components import farewell_message, flowers_between_section, lavender_flowers
 from wedding.routes import FileRoutes
 from wedding.styles import style
 
@@ -15,9 +15,6 @@ from .views import (
     wedding_confirmation,
     wedding_google_photos,
 )
-
-# class State(rx.State):
-#     ...
 
 
 @rx.page(title=utils.title_main, description=utils.description_main)
@@ -47,7 +44,7 @@ def index() -> rx.Component:
             ),
             width="auto",
         ),
-        footer(),
+        farewell_message(),
         lavender_flowers(
             image=FileRoutes.IMAGE_LAVENDER_BOTTOM.value,
             margin_type=False,

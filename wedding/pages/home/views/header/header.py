@@ -6,6 +6,13 @@ from .components import image_header, title_header, wedding_date_header
 
 
 def header() -> rx.Component:
+    """
+    Creates a header component with title, image, and wedding date.
+
+    Returns:
+        rx.Component: The header component.
+    """
+
     return rx.vstack(
         rx.flex(
             title_header(),

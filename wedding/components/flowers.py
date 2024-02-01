@@ -26,7 +26,7 @@ def lavender_flowers(image: str, margin_type: bool = True) -> rx.Component:
                 flex_shrink="0",
                 position="relative",
                 margin_bottom="-120px",
-                z_index="990",
+                z_index="1",
             ),
             rx.image(
                 src=image,
@@ -34,7 +34,7 @@ def lavender_flowers(image: str, margin_type: bool = True) -> rx.Component:
                 height="100%",
                 flex_shrink="0",
                 margin_top="-139px",
-                z_index="990",
+                z_index="1",
             ),
         )
     )

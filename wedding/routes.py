@@ -16,7 +16,6 @@ class Route(Enum):
 class FileRoutes(Enum):
     JS_COUNTDOWN = "/js/countdown.js"
     IMAGE_HEADER = "/images/almendros_.png"
-    # IMAGE_HEADER = "/images/almendros.webp"
     IMAGE_AGRIPINA = "/images/agripina.jpg"
     IMAGE_LAVENDER_TOP = "/images/lavender_top.png"
     IMAGE_LAVENDER_BOTTOM = "/images/lavender_bottom.png"

@@ -22,6 +22,5 @@ def contact() -> rx.Component:
         create_whatsapp_button(utils.contact_bride, utils.contact_groom),
         text_section(utils.contact_text_email),
         create_emails_component(utils.contact_bride, utils.contact_groom),
-        # rx.button("open countdown", on_click=rx.redirect("/#countdown_section")),  #TODO Prueba estados
         id="contact_section",
     )

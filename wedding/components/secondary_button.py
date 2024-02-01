@@ -7,7 +7,10 @@ from wedding.styles import style
 
 
 def secondary_button(
-    button_name: str, url: str, icon: Optional[str] = None
+    button_name: str,
+    url: str,
+    icon: Optional[str] = None,
+    alt: Optional[str] = None,
 ) -> rx.Component:
     """
     Create a reflex component for a secondary button.
@@ -16,6 +19,7 @@ def secondary_button(
         button_name (str): Name of the button.
         url (str): URL to link the button to.
         icon (Optional[str]): Optional icon source.
+        alt (Optional[str]): Optional description of the icon image.
 
     Returns:
         rx.Component: Reflex component for a secondary button.
@@ -24,7 +28,7 @@ def secondary_button(
     button_content = []
 
     if icon:
-        button_content.append(rx.image(src=icon, alt=utils.alt_whatsapp))
+        button_content.append(rx.image(src=icon, alt=alt))
 
     button_content.append(rx.text(button_name))
 

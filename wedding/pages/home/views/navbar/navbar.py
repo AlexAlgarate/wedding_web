@@ -1,22 +1,31 @@
 import reflex as rx
 
-from wedding.styles import Color, Size
+from wedding.styles import Color, style
 
-from .components import initials_navbar
+from .components import initials_navbar, menu_bar, menu_icon
 
 
 def navbar() -> rx.Component:
-    return rx.center(
+    """
+    Creates a responsive navbar component with a menu bar, initials, and a notification bell.
+
+    Returns:
+        rx.Component: The navbar component.
+    """
+
+    return rx.box(
         rx.hstack(
+            menu_bar(
+                icon=menu_icon(
+                    tag="hamburger",
+                    color=Color.TITLES.value,
+                )
+            ),
+            rx.spacer(),
             initials_navbar(),
+            rx.spacer(),
+            menu_icon(tag="bell"),
         ),
-        box_shadow=f"0px 1px 5px 1px {Color.PURPLE_OPACITY.value}",
-        position="sticky",
-        padding_top="0.75em",
-        padding_bottom=Size.ZERO.value,
-        z_index="999",
-        top="0",
-        background_color=Color.CONTENT.value,
+        style=style.NAVBAR_STYLE,
         class_name="navbar_wedding",
-        width="100%",
     )

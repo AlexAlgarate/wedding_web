@@ -1,6 +1,7 @@
 from typing import Dict
 
 import reflex as rx
+from wedding import utils
 
 from wedding.components import secondary_button
 from wedding.routes import IconRoutes as icon
@@ -22,6 +23,7 @@ def create_whatsapp_button(*contacts: Dict[str, str]) -> rx.Component:
             f"Abrir Whatsapp con {contact.get('name')}",
             f"https://wa.me/34{contact.get('phone_number').replace(' ', '')}",
             icon.ICON_WHATSAPP.value,
+            utils.alt_whatsapp,
         )
         for contact in contacts
     ]

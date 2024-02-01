@@ -1,7 +1,7 @@
 import reflex as rx
 
 from wedding import utils
-from wedding.components import icon_section, texts_lines
+from wedding.components import icon_section
 from wedding.routes import IconRoutes as icon
 from wedding.styles import FontWeight, Size, style
 
@@ -9,7 +9,7 @@ from wedding.styles import FontWeight, Size, style
 def destination() -> rx.Component:
     return rx.vstack(
         rx.hstack(icon_section(icon=icon.ICON_UBICATION.value, width=Size.BIG.value)),
-        *texts_lines((utils.bus_destination_title, style.BUS_TITLE_SECTION)),
+        rx.text(utils.bus_destination_title, style=style.BUS_TITLE_SECTION),
         rx.spacer(),
         _bus_text_destination(),
         width="100",

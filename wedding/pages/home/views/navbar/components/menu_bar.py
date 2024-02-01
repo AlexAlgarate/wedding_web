@@ -1,30 +1,29 @@
-from typing import List
-
 import reflex as rx
 
 from wedding import utils
-from wedding.routes import IconRoutes as icon
 from wedding.styles import Color, Size
 
 from .link_navbar import link_navbar
 
 
-def menu_bar(
-    menu_items: List[str],
-    urls_list: List[str],
-    is_external_list: List[bool],
-) -> rx.Component:
+def menu_bar(icon: rx.Component) -> rx.Component:
+    """
+    Creates a responsive menu bar component with links and a hamburger menu icon.
+
+    Returns:
+        rx.Component: The menu bar component.
+    """
+
     menu_content = []
 
-    for item_name, url, is_external in zip(menu_items, urls_list, is_external_list):
-        menu_content.append(link_navbar(item_name, url, is_external))
+    for item_name, url in zip(utils.menu_items, utils.href_list):
+        menu_content.append(link_navbar(item_name, url))
 
-        if item_name != menu_items[-1]:
-            menu_content.append(
-                rx.menu_divider(variant="solid", border_color=Color.DEFAULT_TEXT.value)
-            )
+        if item_name != utils.menu_items[-1]:
+            menu_content.append(rx.menu_divider())
+
     return rx.menu(
-        rx.menu_button(rx.image(src=icon.ICON_MENU.value, alt=utils.alt_image_menu)),
+        rx.menu_button(icon),
         rx.menu_list(
             *menu_content,
             padding=Size.DEFAULT.value,
@@ -36,14 +35,11 @@ def menu_bar(
                 Size.LARGE.value,
                 Size.LARGE.value,
             ],
-            border="solid",
-            border_width="0 1px 1px 0",
-            border_color=Color.DEFAULT_TEXT.value,
-            box_shadow=f"3px 2.5px 8px 1px {Color.PURPLE_OPACITY.value}",
+            box_shadow=f"1px 1px 4px 1px {Color.PURPLE_OPACITY.value}",
             width="100%",
         ),
         close_on_blur=True,
-        is_lazy=True,
         close_on_select=True,
+        is_lazy=True,
         width="100%",
     )
