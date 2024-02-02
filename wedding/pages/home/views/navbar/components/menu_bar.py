@@ -2,7 +2,6 @@ from typing import Dict
 
 import reflex as rx
 
-
 from wedding.styles import Color, Size
 
 from .link_navbar import link_navbar
