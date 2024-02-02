@@ -19,18 +19,11 @@ def navbar() -> rx.Component:
                 tag="hamburger",
                 color=Color.TITLES.value,
             )
-            
-            
-            
-            
-            
         ),
-        rx.spacer(),   
+        rx.spacer(),
         initials_navbar(),
         rx.spacer(),
         menu_icon(tag="bell"),
-        
-        
         style=style.NAVBAR_STYLE,
         class_name="navbar_wedding",
     )
