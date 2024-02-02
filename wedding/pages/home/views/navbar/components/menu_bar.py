@@ -1,25 +1,26 @@
+from typing import Dict
+
 import reflex as rx
 
-from wedding import utils
+
 from wedding.styles import Color, Size
 
 from .link_navbar import link_navbar
 
 
-def menu_bar(icon: rx.Component) -> rx.Component:
+def menu_bar(icon: rx.Component, menu_dict: Dict[str, str]) -> rx.Component:
     """
     Creates a responsive menu bar component with links and a hamburger menu icon.
 
     Returns:
         rx.Component: The menu bar component.
     """
-
     menu_content = []
 
-    for item_name, url in zip(utils.menu_items, utils.href_list):
+    for item_name, url in menu_dict.items():
         menu_content.append(link_navbar(item_name, url))
 
-        if item_name != utils.menu_items[-1]:
+        if item_name != list(menu_dict.keys())[-1]:
             menu_content.append(rx.menu_divider())
 
     return rx.menu(

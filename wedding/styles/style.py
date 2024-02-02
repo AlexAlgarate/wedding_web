@@ -40,11 +40,10 @@ BASE_STYLE = {
 NAVBAR_STYLE = {
     "box_shadow": f"0px 1px 5px 1px {Color.PURPLE_OPACITY.value}",
     "position": "sticky",
-    "padding_top": "0.75em",
+    "padding_top": Size.MEDIUM_SMALL.value,
     "padding_bottom": Size.ZERO.value,
     "z_index": "5",
     "justify_content": "center",
-    "justify": "center",
     "top": "0",
     "background_color": Color.CONTENT.value,
     "width": "100%",
@@ -57,6 +56,19 @@ INITIALS_NAVBAR_STYLE = {
     "color": Color.TITLES.value,
     "font_family": Font.TITLE.value,
     "letter_spacing": "5px",
+}
+
+
+CARD_STYLE = {
+    "width": "85%",
+    "gap": "8px",
+    "padding": "16px 12px",
+    "margin_x": Size.MEDIUM.value,
+    "justify_content": "center",
+    "border_radius": "12px",
+    "box_shadow": "0px 2px 4px 0px rgba(0, 0, 0, 0.25)",
+    "height": "100%",
+    "scroll_margin_top": "75px",
 }
 
 

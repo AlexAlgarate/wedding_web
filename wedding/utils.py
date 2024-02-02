@@ -1,26 +1,17 @@
 import os
-from typing import List
+from typing import Dict, List
 
 from dotenv import load_dotenv
 
 load_dotenv()
 
-
-# Menu items
-menu_items: List[str] = [
-    "Fecha",
-    "Confirmación",
-    "Autobús",
-    "Contacto",
-    "Fotos",
-]
-href_list: List[str] = [
-    "/#wedding_date",
-    "/#confirmation_section",
-    "/#bus_service_section",
-    "/#contact_section",
-    "/#photos_section",
-]
+menu_data: Dict[str, str] = {
+    "Confirmación": "/#confirmation_section",
+    "Dirección": "/#celebration_section",
+    "Autobús": "/#bus_service_section",
+    "Contacto": "/#contact_section",
+    "Fotos": "/#photos_section",
+}
 
 
 # Web descriptions
