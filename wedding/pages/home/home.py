@@ -5,6 +5,7 @@ from wedding.components import (
     farewell_message,
     flowers_between_section,
     lavender_flowers,
+    navbar,
 )
 from wedding.routes import FileRoutes
 from wedding.styles import style
@@ -15,7 +16,6 @@ from .views import (
     contact,
     countdown,
     header,
-    navbar,
     wedding_confirmation,
     wedding_google_photos,
 )

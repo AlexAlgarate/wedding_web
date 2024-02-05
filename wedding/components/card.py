@@ -1,9 +1,8 @@
-from typing import Dict, Optional
+from typing import Optional
 
 import reflex as rx
-from wedding.styles import style
 
-from wedding.styles import Size
+from wedding.styles import style
 
 
 def card(

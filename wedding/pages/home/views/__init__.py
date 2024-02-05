@@ -5,5 +5,4 @@ from wedding.pages.home.views.contact.contact import contact
 from wedding.pages.home.views.countdown.countdown import countdown
 from wedding.pages.home.views.gifts.wedding_gifts import wedding_gifts
 from wedding.pages.home.views.header.header import header
-from wedding.pages.home.views.navbar.navbar import navbar
 from wedding.pages.home.views.photo.google_photo import wedding_google_photos
