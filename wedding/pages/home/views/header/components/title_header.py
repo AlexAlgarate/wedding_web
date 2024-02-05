@@ -11,12 +11,24 @@ def title_header() -> rx.Component:
         rx.Component: The title header component.
     """
 
-    return rx.flex(
-        _title("¡Nos"),
-        _title("casamos!"),
-        direction="column",
-        align="center",
-        margin_top="-85px",
+    return rx.vstack(
+        rx.mobile_and_tablet(
+            rx.flex(
+                _title("¡Nos"),
+                _title("casamos!"),
+                direction="column",
+                align="center",
+            ),
+            margin_top="-85px",
+        ),
+        rx.desktop_only(
+            rx.flex(
+                _title("¡Nos"),
+                _title("casamos!"),
+                direction="column",
+                align="center",
+            )
+        ),
     )
 
 
