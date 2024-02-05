@@ -1,11 +1,11 @@
-from typing import List
+from typing import List, Optional
 
 import reflex as rx
 
 from wedding.styles import style
 
 
-def wedding_date_header(list_date: List[str]) -> rx.Component:
+def wedding_date_header(list_date: List[str], size: Optional[str] = None) -> rx.Component:
     """
     Creates a heading component for the wedding date.
 
@@ -18,6 +18,6 @@ def wedding_date_header(list_date: List[str]) -> rx.Component:
 
     return rx.heading(
         " ".join(list_date),
-        size="2xl",
+        size=size,
         style=style.WEDDING_DATE_HEADER,
     )
