@@ -5,7 +5,9 @@ import reflex as rx
 from wedding.styles import style
 
 
-def wedding_date_header(list_date: List[str], size: Optional[str] = None) -> rx.Component:
+def wedding_date_header(
+    list_date: List[str], size: Optional[str] = None
+) -> rx.Component:
     """
     Creates a heading component for the wedding date.
 
