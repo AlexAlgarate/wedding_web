@@ -17,6 +17,7 @@ from .views import (
     countdown,
     header,
     wedding_confirmation,
+    wedding_gifts,
     wedding_google_photos,
 )
 

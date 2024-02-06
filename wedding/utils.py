@@ -91,7 +91,8 @@ google_photo_button = "Abrir álbum"
 gift_title = "Lista de regalos"
 gift_text = """
     Vuestra presencia es nuestro mayor regalo,
-    pero si queréis hacer una aportacion este es nuestro número de cuenta
+    pero si nos queréis hacer una aportacion para ayudarnos a celebrar,
+    este es nuestro número de cuenta
 """
 account_number_text = os.getenv("ACCOUNT_NUMBER")
 
