@@ -15,9 +15,9 @@ menu_data: Dict[str, str] = {
 
 
 # Web descriptions
-title_main = "Web de la boda de Vicky y Álex"
+title_main = "Invitación de boda de Vicky y Álex 30/08/2024"
 description_main = """
-    Ruta principal de la web de la boda de los novios para gestionar las invitaciones
+    ¡Quedas invitada a nuestra boda! ¡Acompáñanos en este día mágico e inolvidable!
 """
 
 
