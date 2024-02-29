@@ -11,7 +11,7 @@ from wedding.components import (
 from wedding.routes import IconRoutes as icon
 
 
-def wedding_confirmation() -> rx.Component:
+def confirmation() -> rx.Component:
     return card(
         icon_section(icon=icon.ICON_CONFIRMATION.value),
         title_section(title=utils.confirmation_title),

@@ -11,7 +11,7 @@ from wedding.components import (
 from wedding.routes import IconRoutes as icon
 
 
-def wedding_google_photos() -> rx.Component:
+def google_photo() -> rx.Component:
     """
     Create a component for opening the Google Photos album
     dedicated to the wedding.

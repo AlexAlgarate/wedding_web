@@ -1,3 +1,5 @@
+import imp
+
 import reflex as rx
 
 from wedding import utils
@@ -9,16 +11,15 @@ from wedding.components import (
 )
 from wedding.routes import FileRoutes
 from wedding.styles import style
+from wedding.views.bus.bus_service import bus_service
+from wedding.views.celebration.celebration import celebration
+from wedding.views.confirmation.confirmation import confirmation
+from wedding.views.contact.contact import contact
+from wedding.views.countdown.countdown import countdown
 
-from .views import contact  # wedding_gifts,
-from .views import (
-    bus_service,
-    celebration,
-    countdown,
-    header,
-    wedding_confirmation,
-    wedding_google_photos,
-)
+# from wedding.views.gifts.wedding_gifts import wedding_gifts
+from wedding.views.google_photo.google_photo import google_photo
+from wedding.views.header.header import header
 
 
 @rx.page(title=utils.title_main, description=utils.description_main)
@@ -32,14 +33,14 @@ def index() -> rx.Component:
                 header(),
                 countdown(),
                 flowers_between_section(),
-                wedding_confirmation(),
+                confirmation(),
                 celebration(),
                 # wedding_gifts(),
                 bus_service(),
                 flowers_between_section(),
                 contact(),
                 flowers_between_section(),
-                wedding_google_photos(),
+                google_photo(),
                 direction="column",
                 gap="16px",
                 align="center",
