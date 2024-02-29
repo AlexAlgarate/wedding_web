@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding.styles import style
+from wedding.styles import Color, Font, FontHeight, FontWeight, Size
 
 
 def create_countdown_vstack(element: str, text_date: str) -> rx.Component:
@@ -34,7 +34,21 @@ def _countdown_numbers(element: str) -> rx.Component:
 
     return rx.text(
         id=element,
-        style=style.COUNTDOWN_NUMBERS_STYLE,
+        color=Color.NUMBERS_COUNTDOWN.value,
+        width="100%",
+        height="100%",
+        font_family=Font.TITLE.value,
+        text_align="center",
+        font_style="normal",
+        font_weight=FontWeight.MEDIUM_INSIDE_TEXTS.value,
+        line_height=FontHeight.NORMAL.value,
+        font_size=[
+            Size.BIG.value,
+            Size.BIG.value,
+            Size.BIG.value,
+            Size.BIG.value,
+            Size.BIG.value,
+        ],
     )
 
 
@@ -51,5 +65,11 @@ def _element_date(text_date: str) -> rx.Component:
 
     return rx.text(
         text_date,
-        style=style.COUNTDOWN_TEXT_STYLE,
+        color=Color.TEXT_COUNTDOWN.value,
+        text_align="center",
+        font_family=Font.DEFAULT.value,
+        font_size="16px",
+        font_style="normal",
+        font_weight=FontWeight.MEDIUM_INSIDE_TEXTS.value,
+        line_height=FontHeight.NORMAL.value,
     )

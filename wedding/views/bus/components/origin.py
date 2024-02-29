@@ -22,14 +22,16 @@ def _bus_text_origin() -> rx.Component:
     return rx.flex(
         rx.box(
             "Salida ",
-            rx.span(utils.origin_bus_schedule, font_weight=FontWeight.BOLD.value),
+            rx.text(
+                utils.origin_bus_schedule, font_weight=FontWeight.BOLD.value, as_="span"
+            ),
             " desde ",
         ),
         rx.box(
-            rx.span(utils.hotel_name, font_weight=FontWeight.BOLD.value),
+            rx.text(utils.hotel_name, font_weight=FontWeight.BOLD.value, as_="span"),
         ),
         rx.box(
-            rx.span(utils.hotel_address, font_weight=FontWeight.BOLD.value),
+            rx.text(utils.hotel_address, font_weight=FontWeight.BOLD.value, as_="span"),
         ),
         direction="column",
         align="center",

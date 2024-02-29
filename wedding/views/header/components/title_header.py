@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding.styles import style
+from wedding.styles import Color, Font, FontWeight
 
 
 def title_header() -> rx.Component:
@@ -27,6 +27,7 @@ def title_header() -> rx.Component:
                 _title("casamos!"),
                 direction="column",
                 align="center",
+                id="header_desktop",
             )
         ),
     )
@@ -45,6 +46,10 @@ def _title(text: str) -> rx.Component:
 
     return rx.heading(
         text,
-        size="2xl",
-        style=style.TEXT_HEADER_STYLE,
+        font_family=Font.TITLE.value,
+        font_weight=FontWeight.MEDIUM.value,
+        font_style="normal",
+        line_height="normal",
+        color=Color.TITLES.value,
+        font_size=["36px", "36px", "48px", "48px", "48px"],
     )

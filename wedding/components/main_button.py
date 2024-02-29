@@ -1,6 +1,7 @@
 import reflex as rx
 
-from wedding.styles import style
+from wedding.styles import Color, Size
+from wedding.styles.fonts import FontWeight
 
 
 def main_button(button_name: str, url: str, **args) -> rx.Component:
@@ -17,7 +18,29 @@ def main_button(button_name: str, url: str, **args) -> rx.Component:
     """
 
     return rx.link(
-        rx.button(button_name, style=style.MAIN_BUTTON_STYLE),
+        rx.button(
+            button_name,
+            width="100%",
+            font_size=[
+                Size.DEFAULT.value,
+                Size.DEFAULT.value,
+                Size.DEFAULT.value,
+                Size.LARGE.value,
+                Size.LARGE.value,
+            ],
+            padding="16px 24px",
+            color=Color.BACKGROUND.value,
+            background=Color.BUTTONS.value,
+            border_radius="5px",
+            border="2px solid #4F1F7E",
+            text_align="center",
+            margin_bottom=Size.DEFAULT.value,
+            _hover={
+                "background": "rgba(80, 69, 135, 0.91)",
+                "cursor": "pointer",
+            },
+            font_weight=FontWeight.HIGH.value,
+        ),
         href=url,
         is_external=True,
     )

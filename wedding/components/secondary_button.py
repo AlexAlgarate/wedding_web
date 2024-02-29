@@ -2,7 +2,7 @@ from typing import Optional
 
 import reflex as rx
 
-from wedding.styles import style
+from wedding.styles import Color, Size
 
 
 def secondary_button(
@@ -34,7 +34,25 @@ def secondary_button(
     return rx.link(
         rx.button(
             *button_content,
-            style=style.SECONDARY_BUTTON_STYLE,
+            color=Color.TITLES.value,
+            text_align="center",
+            font_variant_numeric="lining-nums proportional-nums",
+            padding="8px 24px",
+            justify_content="center",
+            align_items="center",
+            gap="8px",
+            align_self="stretch",
+            border_radius="5px",
+            border="2px solid #4F1F7E",
+            background=Color.BACKGROUND.value,
+            font_size=[
+                Size.DEFAULT.value,
+                Size.DEFAULT.value,
+                Size.DEFAULT.value,
+                Size.LARGE.value,
+                Size.LARGE.value,
+            ],
+            _hover={"cursor": "pointer", "background": "#f4f2fa"},
         ),
         href=url,
         is_external=True,

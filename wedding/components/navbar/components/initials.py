@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding.styles import Size, style
+from wedding.styles import Color, Font, FontWeight, Size
 
 
 def _capital_letter_initial(letter: str) -> rx.Component:
@@ -14,7 +14,7 @@ def _capital_letter_initial(letter: str) -> rx.Component:
         rx.Component: The capital letter component.
     """
 
-    return rx.span(
+    return rx.text(
         letter.upper(),
         font_size=[
             Size.BIG_TITLES.value,
@@ -23,6 +23,7 @@ def _capital_letter_initial(letter: str) -> rx.Component:
             Size.MEDIUM_BIGGER.value,
             Size.MEDIUM_BIGGER.value,
         ],
+        as_="span",
     )
 
 
@@ -37,12 +38,13 @@ def initials_navbar() -> rx.Component:
     return rx.link(
         rx.box(
             _capital_letter_initial("V"),
-            rx.span(
-                "&",
-                font_size="1.75em",
-            ),
+            rx.text("&", font_size="1.75em", as_="span"),
             _capital_letter_initial("Á"),
-            style=style.INITIALS_NAVBAR_STYLE,
+            height="100%",
+            font_weight=FontWeight.MEDIUM.value,
+            color=Color.TITLES.value,
+            font_family=Font.TITLE.value,
+            letter_spacing="5px",
         ),
         href="/",
         is_external=False,

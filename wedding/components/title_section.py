@@ -1,6 +1,6 @@
 import reflex as rx
 
-from wedding.styles import style
+from wedding.styles import Color, Font, FontHeight, FontWeight
 
 
 def title_section(title: str) -> rx.Component:
@@ -14,4 +14,14 @@ def title_section(title: str) -> rx.Component:
         rx.Component: The title section component.
     """
 
-    return rx.heading(title, style=style.TITLE_STYLE)
+    return rx.heading(
+        title,
+        size="7",
+        font_weight=FontWeight.MEDIUM.value,
+        text_align="center",
+        width="100%",
+        letter_spacing="0.0125rem",
+        line_height=FontHeight.MEDIUM.value,
+        font_family=Font.TITLE.value,
+        color=Color.TITLES.value,
+    )

@@ -4,7 +4,7 @@ import wedding.urls as url
 from wedding import utils as utils
 from wedding.components import secondary_button, text_section
 from wedding.routes import FileRoutes
-from wedding.styles import style
+from wedding.styles import Color
 
 from .components import create_countdown_vstack
 
@@ -30,8 +30,13 @@ def countdown() -> rx.Component:
             rx.script(src=FileRoutes.JS_COUNTDOWN.value),
             justify="center",
             align="center",
-            style=style.COUNTDOWN_BAR_STYLE,
+            padding="16px 0px",
+            gap="1.5em",
+            align_self="stretch",
+            background=Color.COUNTDOWN_BACKGROUND.value,
+            width="100%",
         ),
+        align="center",
         gap="16px",
         id="wedding_date",
         width="100%",

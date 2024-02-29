@@ -1,5 +1,5 @@
 black
 isort
-reflex==0.3.10
+reflex
 flake8
 python-dotenv

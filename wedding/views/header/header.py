@@ -22,8 +22,8 @@ def header() -> rx.Component:
         rx.flex(
             title_header(),
             image_header(),
-            wedding_date_header(list_date=utils.wedding_date, size="2xl"),
-            wedding_hour_header(hour="18:30", size="xl"),
+            wedding_date_header(list_date=utils.wedding_date, size="8"),
+            wedding_hour_header(hour="18:30", size="7"),
             direction="column",
             align_items="center",
             align_self="stretch",
