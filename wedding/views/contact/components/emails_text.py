@@ -35,9 +35,9 @@ def create_single_email(email: Dict[str, str]) -> rx.Component:
         email["email"],
         font_size=[
             "1.2em",
-            Size.LARGE.value,
-            Size.LARGE.value,
-            Size.LARGE.value,
+            "1.2em",
+            "1.2em",
+            "1.2em",
             Size.LARGE.value,
         ],
         font_weight="600",

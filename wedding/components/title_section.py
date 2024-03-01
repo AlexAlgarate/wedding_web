@@ -16,7 +16,12 @@ def title_section(title: str) -> rx.Component:
 
     return rx.heading(
         title,
-        size="7",
+        font_size=[
+            "30px",
+            "30px" "30px",
+            "36px",
+            "36px",
+        ],
         font_weight=FontWeight.MEDIUM.value,
         text_align="center",
         width="100%",
