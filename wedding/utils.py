@@ -28,6 +28,7 @@ wedding_date: List[str] = [
     "agosto",
     "2024",
 ]
+wedding_hour = "19:00"
 
 
 # Image descriptions

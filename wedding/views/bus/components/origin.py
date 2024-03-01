@@ -15,6 +15,7 @@ def origin() -> rx.Component:
         rx.spacer(),
         _bus_text_origin(),
         width="100%",
+        align="center",
     )
 
 
@@ -22,25 +23,25 @@ def _bus_text_origin() -> rx.Component:
     return rx.flex(
         rx.box(
             "Salida ",
-            rx.text(
-                utils.origin_bus_schedule, font_weight=FontWeight.BOLD.value, as_="span"
-            ),
+            rx.text(utils.origin_bus_schedule, font_weight=FontWeight.BOLD.value, as_="span"),
             " desde ",
         ),
         rx.box(
-            rx.text(utils.hotel_name, font_weight=FontWeight.BOLD.value, as_="span"),
+            rx.text(
+                utils.hotel_name,
+                font_weight=FontWeight.BOLD.value,
+                as_="span",
+            ),
         ),
         rx.box(
-            rx.text(utils.hotel_address, font_weight=FontWeight.BOLD.value, as_="span"),
+            rx.text(
+                utils.hotel_address,
+                font_weight=FontWeight.BOLD.value,
+                as_="span",
+            ),
         ),
         direction="column",
         align="center",
-        font_size=[
-            Size.MAIN_TEXTS.value,
-            Size.MAIN_TEXTS.value,
-            Size.MAIN_TEXTS.value,
-            Size.MAIN_TEXTS.value,
-            Size.MAIN_TEXTS.value,
-        ],
-        max_width=style.MAX_WIDTH,
+        justify="center",
+        font_size=Size.MAIN_TEXTS.value,
     )

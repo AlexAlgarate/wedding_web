@@ -13,6 +13,7 @@ def destination() -> rx.Component:
         rx.spacer(),
         _bus_text_destination(),
         width="100",
+        align="center",
     )
 
 
@@ -40,11 +41,5 @@ def _bus_text_destination() -> rx.Component:
         ),
         direction="column",
         align="center",
-        font_size=[
-            Size.MAIN_TEXTS.value,
-            Size.MAIN_TEXTS.value,
-            Size.MAIN_TEXTS.value,
-            Size.MAIN_TEXTS.value,
-            Size.MAIN_TEXTS.value,
-        ],
+        font_size=Size.MAIN_TEXTS.value,
     )
