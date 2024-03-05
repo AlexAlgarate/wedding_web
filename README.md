@@ -7,15 +7,16 @@
 
 ![Picture of the bride and groom.](/assets/images/almendros_.webp)
 
-## Proyect
+## Project
 
-As the project's name suggests, I'm getting married this year. And since I didn't want to make paper wedding invitations, I thought about making a website. For this, I've used *[Reflex](https://reflex.dev)*, a modern Python framework for creating both static and dynamic web pages. Reflex utilizes a UI component library based on *[Radix](https://www.radix-ui.com/)*, to which you can add all the *[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)* properties you want.
+As the project's name suggests, I'm getting married this year. And since I didn't want to make paper wedding invitations, I thought about making a website. For this, I've used *[Reflex](https://reflex.dev)*, a modern Python framework that serves to create web pages with few lines of code. Reflex utilizes a UI component library based on *[Radix](https://www.radix-ui.com/)*, to which you can add all the *[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)* properties you want.
 
 Let me show you some images of the incredible things that can be done with very few lines of code.
 
 <a href="https://boda-vicky-alex.vercel.app/"><img src="/assets/images/header.webp" alt="Header card image" style="height: 35%; width:35%;"/></a>
 
 The sections are hosted within customized cards with icons, texts, and buttons. For example, the contact card has two buttons that redirect directly to WhatsApp to get in touch with the bride and groom.
+
 <a href="https://boda-vicky-alex.vercel.app/#contact_section"><img src="/assets/images/contact_card.webp" alt="Contact card image" style="height: 35%; width:35%;"/></a>
 
 There's also a card that uses JavaScript to create a countdown to the event date.
@@ -71,11 +72,21 @@ reflex run
 
 <a href="https://boda-vicky-alex.vercel.app/#confirmation_section"><img src="/assets/images/reflex_run.webp" alt="Reflex run command in CMD" style="height: 75%; width:75%;"/></a>
 
+## Deploy
+
+To deploy the project, I use *[Vercel](https://vercel.com/)*, but you can use the service provided by Reflex (*[you can see the documentation here](https://reflex.dev/docs/hosting/self-hosting/#exporting-a-static-build)*).
+In my case, I have automated the deployment process with a GitHub Action following Reflex's instructions when exporting the frontend. If you want to add states and backend, you should review this point as Vercel doesn't play well with Python code (an alternative is *[Railway](https://railway.app/)*).
+
+```sh
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+rm -fr public
+isort wedding/
+black wedding/
+reflex init
+reflex export --frontend-only
+unzip frontend.zip -d public
+rm -f frontend.zip
+```
+
 ### 💻 [Access the project's code](./wedding)
-
-## Links of interest
-
-* [Official Reflex webpage](https://reflex.dev/)
-* [Official Reflex documentation](https://reflex.dev/docs/)
-* [Vercel](https://vercel.com/)
-* [Radix UI](https://www.radix-ui.com/)
