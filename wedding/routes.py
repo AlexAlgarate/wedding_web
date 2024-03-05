@@ -8,6 +8,10 @@ def icon_route(filename: str, png: bool = False) -> str:
         return f"/icons/{filename}.svg"
 
 
+def image_route(filename: str) -> str:
+    return f"/images/{filename}.webp"
+
+
 class Route(Enum):
     INDEX = "/"
     CONTACT = "/contact"
@@ -15,11 +19,11 @@ class Route(Enum):
 
 class FileRoutes(Enum):
     JS_COUNTDOWN = "/js/countdown.js"
-    IMAGE_HEADER = "/images/almendros_.png"
-    IMAGE_AGRIPINA = "/images/agripina.jpg"
-    IMAGE_LAVENDER_TOP = "/images/lavender_top.png"
-    IMAGE_LAVENDER_BOTTOM = "/images/lavender_bottom.png"
-    IMAGE_LEAFS_SECTION = "/images/leafs.svg"
+    IMAGE_HEADER = image_route("almendros_")
+    IMAGE_AGRIPINA = image_route("agripina")
+    IMAGE_LAVENDER_TOP = image_route("lavender_top")
+    IMAGE_LAVENDER_BOTTOM = image_route("lavender_bottom")
+    IMAGE_LEAFS_SECTION = image_route("leafs")
 
 
 class IconRoutes(Enum):
