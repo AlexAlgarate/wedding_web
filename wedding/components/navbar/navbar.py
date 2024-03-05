@@ -1,9 +1,30 @@
 import reflex as rx
 
 from wedding import utils
+from wedding.components.navbar.components import link_navbar
 from wedding.styles import Color, Size
 
-from .components import initials_navbar, menu_bar, menu_icon
+from .components import initials_navbar, menu_icon
+
+
+def menu_buger() -> rx.Component:
+    menu_items = [
+        rx.menu.item(
+            link_navbar(title=title, url=url),
+            color_scheme="purple",
+        )
+        for title, url in utils.menu_data.items()
+    ]
+
+    return rx.link(
+        rx.menu.root(
+            rx.menu.trigger(menu_icon(tag="menu", color=Color.TITLES.value)),
+            rx.menu.content(
+                *menu_items,
+                size="2",
+            ),
+        )
+    )
 
 
 def navbar() -> rx.Component:
@@ -15,14 +36,7 @@ def navbar() -> rx.Component:
     """
 
     return rx.hstack(
-        menu_icon(tag="bell"),
-        # menu_bar(
-        #     icon=menu_icon(
-        #         tag="menu",
-        #         color=Color.TITLES.value,
-        #     ),
-        #     menu_dict=utils.menu_data,
-        # ),
+        menu_buger(),
         rx.spacer(),
         initials_navbar(),
         rx.spacer(),
@@ -38,4 +52,6 @@ def navbar() -> rx.Component:
         top="0",
         background_color=Color.CONTENT.value,
         width="100%",
+        align="center",
+        justify="center",
     )

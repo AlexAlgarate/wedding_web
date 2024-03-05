@@ -23,7 +23,9 @@ def _bus_text_origin() -> rx.Component:
     return rx.flex(
         rx.box(
             "Salida ",
-            rx.text(utils.origin_bus_schedule, font_weight=FontWeight.BOLD.value, as_="span"),
+            rx.text(
+                utils.origin_bus_schedule, font_weight=FontWeight.BOLD.value, as_="span"
+            ),
             " desde ",
         ),
         rx.box(

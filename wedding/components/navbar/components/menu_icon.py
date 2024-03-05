@@ -15,8 +15,7 @@ def menu_icon(tag: str, color: str = "transparent") -> rx.Component:
 
     return rx.icon(
         tag=tag,
-        height="24px",
-        width="24px",
         color=color,
         margin="12px 16px",
+        size=24,
     )

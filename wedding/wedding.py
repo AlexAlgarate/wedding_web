@@ -1,5 +1,3 @@
-import imp
-
 import reflex as rx
 
 from wedding import utils
@@ -22,7 +20,11 @@ from wedding.views.google_photo.google_photo import google_photo
 from wedding.views.header.header import header
 
 
-@rx.page(title=utils.title_main, description=utils.description_main)
+@rx.page(
+    title=utils.title_main,
+    description=utils.description_main,
+    image=FileRoutes.IMAGE_HEADER.value,
+)
 def index() -> rx.Component:
     return rx.vstack(
         rx.script("document.documentElement.lang='es'"),
@@ -61,4 +63,6 @@ def index() -> rx.Component:
     )
 
 
-app = rx.App(stylesheets=style.STYLESHEETS)
+app = rx.App(
+    stylesheets=style.STYLESHEETS,
+)
