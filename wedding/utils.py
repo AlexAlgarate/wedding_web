@@ -36,7 +36,7 @@ alt_image_celebration = "Foto de la entrada de La Agripina."
 alt_image_partners = "Foto principal de los novios."
 label_image_celebration = "Pincha en la imagen para visitar el sitio web de La Agripina"
 alt_image_leafs = "Foto de unas hojas amarillas."
-
+alt_image_lavender = "Foto de unas ramas de lavanda con sus hojas"
 
 # Icons desriptions
 alt_icon_confirmation = "Icono de un sobre morado"

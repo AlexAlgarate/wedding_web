@@ -4,7 +4,11 @@ from wedding import utils
 from wedding.routes import FileRoutes as file
 
 
-def lavender_flowers(image: str, margin_type: bool = True) -> rx.Component:
+def lavender_flowers(
+    alt: str,
+    image: str,
+    margin_type: bool = True,
+) -> rx.Component:
     """
     Create a mobile-only component displaying an image with optional margin adjustments.
 
@@ -27,6 +31,7 @@ def lavender_flowers(image: str, margin_type: bool = True) -> rx.Component:
                 position="relative",
                 margin_bottom="-120px",
                 z_index="1",
+                alt=alt,
             ),
             rx.image(
                 src=image,
@@ -35,6 +40,7 @@ def lavender_flowers(image: str, margin_type: bool = True) -> rx.Component:
                 flex_shrink="0",
                 margin_top="-139px",
                 z_index="1",
+                alt=alt,
             ),
         )
     )

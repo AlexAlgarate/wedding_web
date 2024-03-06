@@ -29,7 +29,10 @@ def index() -> rx.Component:
     return rx.vstack(
         rx.script("document.documentElement.lang='es'"),
         navbar(),
-        lavender_flowers(image=FileRoutes.IMAGE_LAVENDER_TOP.value),
+        lavender_flowers(
+            alt=utils.alt_image_lavender,
+            image=FileRoutes.IMAGE_LAVENDER_TOP.value,
+        ),
         rx.vstack(
             rx.flex(
                 header(),
@@ -53,6 +56,7 @@ def index() -> rx.Component:
         ),
         farewell_message(),
         lavender_flowers(
+            alt=utils.alt_image_lavender,
             image=FileRoutes.IMAGE_LAVENDER_BOTTOM.value,
             margin_type=False,
         ),
