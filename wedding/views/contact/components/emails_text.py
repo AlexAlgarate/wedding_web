@@ -5,7 +5,7 @@ import reflex as rx
 from wedding.styles import Size
 
 
-def create_emails_component(*contact: Dict[str, str]) -> rx.Component:
+def emails_text_component(*contact: Dict[str, str]) -> rx.Component:
     """
     Creates a reflex component to display email text.
 

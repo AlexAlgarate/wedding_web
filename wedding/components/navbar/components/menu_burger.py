@@ -28,12 +28,13 @@ def menu_burger(data: Dict[str, str]) -> rx.Component:
         for title, url in data.items()
     ]
 
-    return rx.link(
-        rx.menu.root(
-            rx.menu.trigger(menu_icon(tag="menu", color=Color.TITLES.value)),
-            rx.menu.content(
-                *menu_items,
-                size="2",
-            ),
-        )
+    return rx.menu.root(
+        rx.menu.trigger(
+            menu_icon(tag="menu", color=Color.TITLES.value),
+            _hover={"cursor": "pointer"},
+        ),
+        rx.menu.content(
+            *menu_items,
+            size="2",
+        ),
     )

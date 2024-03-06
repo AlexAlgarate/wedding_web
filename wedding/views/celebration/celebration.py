@@ -15,7 +15,7 @@ from .components import image_celebration, text_celebration
 
 def celebration() -> rx.Component:
     return rx.flex(
-        icon_section(icon=icon.ICON_CELEBRATION.value),
+        icon_section(icon=icon.ICON_CELEBRATION.value, alt=utils.alt_icon_celebration),
         title_section(title=utils.celebration_title),
         text_section(utils.celebration_text),
         image_celebration(image=FileRoutes.IMAGE_AGRIPINA.value),

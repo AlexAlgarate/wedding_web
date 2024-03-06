@@ -32,11 +32,21 @@ wedding_hour = "19:00"
 
 
 # Image descriptions
-alt_celebration = "Foto de la entrada de La Agripina."
+alt_image_celebration = "Foto de la entrada de La Agripina."
 alt_image_partners = "Foto principal de los novios."
-alt_whatsapp = "Icono de Whatsapp"
 label_image_celebration = "Pincha en la imagen para visitar el sitio web de La Agripina"
-alt_leafs = "Foto de unas hojas amarillas."
+alt_image_leafs = "Foto de unas hojas amarillas."
+
+
+# Icons desriptions
+alt_icon_confirmation = "Icono de un sobre morado"
+alt_icon_celebration = "Icono de un pórtico con velo morado"
+alt_icon_bus = "Icono de un bus morado"
+alt_icon_ubication = "Icono de ubicación morado"
+alt_icon_contact = "Icono de un teléfono y un mensaje de texto morado"
+alt_icon_whatsapp = "Icono de Whatsapp morado"
+alt_icon_camera = "Icono de una cámara de fotos morada"
+
 
 # SECTION TEXTS
 # Countdown texts

@@ -58,6 +58,6 @@ def flowers_between_section() -> rx.Component:
             width="100%",
             height="100%",
             flex_shrink="0",
-            alt=utils.alt_leafs,
+            alt=utils.alt_image_leafs,
         )
     )

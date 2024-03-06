@@ -9,7 +9,7 @@ from .components import destination, origin
 
 def bus_service() -> rx.Component:
     return card(
-        icon_section(icon=icon.ICON_BUS.value),
+        icon_section(icon=icon.ICON_BUS.value, alt=utils.alt_icon_bus),
         title_section(title=utils.but_title),
         text_section(utils.bus_text),
         origin(),

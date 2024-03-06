@@ -48,5 +48,5 @@ def initials_navbar() -> rx.Component:
         ),
         href="/",
         is_external=False,
-        _hover={},
+        _hover={"text_decoration": "none"},
     )

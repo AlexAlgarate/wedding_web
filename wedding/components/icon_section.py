@@ -5,7 +5,7 @@ import reflex as rx
 from wedding.styles import Color, Size
 
 
-def icon_section(icon: str, width: Optional[str] = None) -> rx.Component:
+def icon_section(alt: str, icon: str, width: Optional[str] = None) -> rx.Component:
     """
     Creates an image component representing an icon.
 
@@ -22,4 +22,5 @@ def icon_section(icon: str, width: Optional[str] = None) -> rx.Component:
         color=Color.DEFAULT_TEXT.value,
         width=width if width is not None else Size.VERY_BIG.value,
         max_height="auto",
+        alt=alt,
     )

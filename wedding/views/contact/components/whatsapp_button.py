@@ -7,7 +7,7 @@ from wedding.components import secondary_button
 from wedding.routes import IconRoutes as icon
 
 
-def create_whatsapp_button(*contacts: Dict[str, str]) -> rx.Component:
+def whatsapp_button(*contacts: Dict[str, str]) -> rx.Component:
     """
     Creates a reflex component to display WhatsApp buttons for multiple contacts.
 
@@ -23,7 +23,7 @@ def create_whatsapp_button(*contacts: Dict[str, str]) -> rx.Component:
             f"Abrir Whatsapp con {contact.get('name')}",
             f"https://wa.me/34{contact.get('phone_number').replace(' ', '')}",
             icon.ICON_WHATSAPP.value,
-            utils.alt_whatsapp,
+            utils.alt_icon_whatsapp,
         )
         for contact in contacts
     ]
