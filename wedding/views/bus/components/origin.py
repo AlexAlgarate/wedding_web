@@ -9,7 +9,11 @@ from wedding.styles import FontWeight, Size, style
 def origin() -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            icon_section(icon=icon.ICON_UBICATION.value, width=Size.BIG.value, alt=utils.alt_icon_ubication),
+            icon_section(
+                icon=icon.ICON_UBICATION.value,
+                width=Size.BIG.value,
+                alt=utils.alt_icon_ubication,
+            ),
         ),
         rx.text(utils.bus_origin_title, style=style.BUS_TITLE_SECTION),
         rx.spacer(),
@@ -23,7 +27,9 @@ def _bus_text_origin() -> rx.Component:
     return rx.flex(
         rx.box(
             "Salida ",
-            rx.text(utils.origin_bus_schedule, font_weight=FontWeight.BOLD.value, as_="span"),
+            rx.text(
+                utils.origin_bus_schedule, font_weight=FontWeight.BOLD.value, as_="span"
+            ),
             " desde ",
         ),
         rx.box(

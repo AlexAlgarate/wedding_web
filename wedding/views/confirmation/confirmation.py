@@ -13,7 +13,9 @@ from wedding.routes import IconRoutes as icon
 
 def confirmation() -> rx.Component:
     return card(
-        icon_section(icon=icon.ICON_CONFIRMATION.value, alt=utils.alt_icon_confirmation),
+        icon_section(
+            icon=icon.ICON_CONFIRMATION.value, alt=utils.alt_icon_confirmation
+        ),
         title_section(title=utils.confirmation_title),
         text_section(text=utils.confirmation_text),
         main_button(button_name=utils.confirmation_button, url=urls.CONFIRMATION_URL),
