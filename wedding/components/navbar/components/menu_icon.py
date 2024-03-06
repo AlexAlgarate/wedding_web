@@ -18,4 +18,10 @@ def menu_icon(tag: str, color: str = "transparent") -> rx.Component:
         color=color,
         margin="12px 16px",
         size=24,
+        custom_attrs={
+            "aria-haspopup": "true",
+            "aria-expanded": "false",
+            "aria-controls": "menu-content",
+            "role": "button",
+        },
     )
