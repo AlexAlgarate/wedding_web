@@ -27,6 +27,7 @@ def image_celebration(image: str) -> rx.Component:
                 """,
                 alt=utils.alt_image_celebration,
                 width="100%",
+                loading="lazy",
             ),
             label=utils.label_image_celebration,
             open_delay=100,
