@@ -22,4 +22,5 @@ def icon_section(icon: str, width: Optional[str] = None) -> rx.Component:
         color=Color.DEFAULT_TEXT.value,
         width=width if width is not None else Size.VERY_BIG.value,
         max_height="auto",
+        loading="lazy",
     )

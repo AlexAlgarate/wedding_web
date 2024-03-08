@@ -27,6 +27,7 @@ def lavender_flowers(image: str, margin_type: bool = True) -> rx.Component:
                 position="relative",
                 margin_bottom="-120px",
                 z_index="1",
+                loading="lazy",
             ),
             rx.image(
                 src=image,
@@ -35,6 +36,7 @@ def lavender_flowers(image: str, margin_type: bool = True) -> rx.Component:
                 flex_shrink="0",
                 margin_top="-139px",
                 z_index="1",
+                loading="lazy",
             ),
         )
     )
@@ -59,5 +61,6 @@ def flowers_between_section() -> rx.Component:
             height="100%",
             flex_shrink="0",
             alt=utils.alt_leafs,
+            loading="lazy",
         )
     )

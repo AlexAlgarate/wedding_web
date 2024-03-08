@@ -27,7 +27,7 @@ def secondary_button(
     button_content = []
 
     if icon:
-        button_content.append(rx.image(src=icon, alt=alt))
+        button_content.append(rx.image(src=icon, alt=alt, loading="lazy"))
 
     button_content.append(rx.text(button_name))
 
