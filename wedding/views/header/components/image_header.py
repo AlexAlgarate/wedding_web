@@ -20,5 +20,4 @@ def image_header() -> rx.Component:
         box_shadow="0px 8px 5px 1px #F8F8FA inset",
         align_self="stretch",
         padding="-6px 12px",
-        loading="lazy",
     )

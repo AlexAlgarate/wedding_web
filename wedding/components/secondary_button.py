@@ -31,7 +31,6 @@ def secondary_button(
             rx.image(
                 src=icon,
                 alt=alt,
-                loading="lazy",
             )
         )
 

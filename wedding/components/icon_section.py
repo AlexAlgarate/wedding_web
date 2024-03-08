@@ -23,5 +23,4 @@ def icon_section(alt: str, icon: str, width: Optional[str] = None) -> rx.Compone
         width=width if width is not None else Size.VERY_BIG.value,
         max_height="auto",
         alt=alt,
-        loading="lazy",
     )
