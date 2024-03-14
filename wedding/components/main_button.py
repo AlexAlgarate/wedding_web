@@ -49,4 +49,5 @@ def main_button(button_name: str, url: str, **args) -> rx.Component:
         ),
         href=url,
         is_external=True,
+        z_index="999",
     )
