@@ -29,6 +29,7 @@ def google_photo() -> rx.Component:
         main_button(
             button_name=utils.google_photo_button,
             url=urls.GOOGLE_FOTOS_URL,
+            z_index="999",
         ),
         id="photos_section",
     )

@@ -4,7 +4,7 @@ from wedding.styles import Color, Size
 from wedding.styles.fonts import FontWeight
 
 
-def main_button(button_name: str, url: str, **args) -> rx.Component:
+def main_button(button_name: str, url: str, z_index: str = "0") -> rx.Component:
     """
     Creates a main button component with a link.
 
@@ -49,5 +49,5 @@ def main_button(button_name: str, url: str, **args) -> rx.Component:
         ),
         href=url,
         is_external=True,
-        z_index="999",
+        z_index=z_index,
     )

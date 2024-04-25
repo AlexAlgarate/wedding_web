@@ -18,6 +18,9 @@ def confirmation() -> rx.Component:
         ),
         title_section(title=utils.confirmation_title),
         text_section(text=utils.confirmation_text),
-        main_button(button_name=utils.confirmation_button, url=urls.CONFIRMATION_URL),
+        main_button(
+            button_name=utils.confirmation_button,
+            url=urls.CONFIRMATION_URL,
+        ),
         id="confirmation_section",
     )
