@@ -23,7 +23,33 @@ def secondary_button(
     Returns:
         rx.Component: Reflex component for a secondary button.
     """
-
+    style_secondary_button = dict(
+        color=Color.TITLES.value,
+        text_align="center",
+        font_variant_numeric="lining-nums proportional-nums",
+        padding=[
+            "8px 24px",
+            "8px 24px",
+            "8px 24px",
+            "8px 24px",
+            "16px 24px",
+        ],
+        justify_content="center",
+        align_items="center",
+        gap="8px",
+        align_self="stretch",
+        border_radius="5px",
+        border="2px solid #4F1F7E",
+        background=Color.BACKGROUND.value,
+        font_size=[
+            Size.DEFAULT.value,
+            Size.DEFAULT.value,
+            Size.DEFAULT.value,
+            Size.DEFAULT.value,
+            Size.LARGE.value,
+        ],
+        _hover={"cursor": "pointer", "background": "#f4f2fa"},
+    )
     button_content = []
 
     if icon:
@@ -37,34 +63,7 @@ def secondary_button(
     button_content.append(rx.text(button_name))
 
     return rx.link(
-        rx.button(
-            *button_content,
-            color=Color.TITLES.value,
-            text_align="center",
-            font_variant_numeric="lining-nums proportional-nums",
-            padding=[
-                "8px 24px",
-                "8px 24px",
-                "8px 24px",
-                "8px 24px",
-                "16px 24px",
-            ],
-            justify_content="center",
-            align_items="center",
-            gap="8px",
-            align_self="stretch",
-            border_radius="5px",
-            border="2px solid #4F1F7E",
-            background=Color.BACKGROUND.value,
-            font_size=[
-                Size.DEFAULT.value,
-                Size.DEFAULT.value,
-                Size.DEFAULT.value,
-                Size.DEFAULT.value,
-                Size.LARGE.value,
-            ],
-            _hover={"cursor": "pointer", "background": "#f4f2fa"},
-        ),
+        rx.button(*button_content, style=style_secondary_button),
         href=url,
         is_external=True,
     )

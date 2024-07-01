@@ -3,3 +3,4 @@ isort
 reflex
 flake8
 python-dotenv
+ruff

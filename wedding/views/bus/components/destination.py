@@ -25,14 +25,12 @@ def destination() -> rx.Component:
 
 def _bus_text_destination() -> rx.Component:
     return rx.flex(
-        rx.box("Salidas de La Agripina "),
+        rx.box("Salida de La Agripina "),
         rx.box(
             "a las ",
-            rx.text("02:00", font_weight=FontWeight.BOLD.value, as_="span"),
-            " y a las ",
-            rx.text("05:00", font_weight=FontWeight.BOLD.value, as_="span"),
+            rx.text("03:30 ", font_weight=FontWeight.BOLD.value, as_="span"),
+            "con destino",
         ),
-        rx.box("con destino"),
         rx.text(
             utils.hotel_name,
             font_weight=FontWeight.BOLD.value,
@@ -44,6 +42,10 @@ def _bus_text_destination() -> rx.Component:
             font_weight=FontWeight.BOLD.value,
             text_wrap="balance",
             as_="span",
+        ),
+        rx.box(
+            "* El horario de vuelta puede variar.",
+            font_size="0.70em",
         ),
         direction="column",
         align="center",

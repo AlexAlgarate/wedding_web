@@ -80,7 +80,7 @@ bur_origin_address = "Av. Martín Alonso Pinzón, 34"
 hotel_name = "Senator Huelva Hotel"
 hotel_address = "C/ Pablo Rada"
 # origin_address = "El Punto, Av. Martín Alonso Pinzón, 34"  # Si sale de El Punto
-origin_bus_schedule = "pte hora"
+origin_bus_schedule = "18:00"
 # origin_bus_schedule = "17:00"
 
 bus_destination_title = "Regreso a casa"
