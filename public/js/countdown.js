@@ -22,7 +22,7 @@ var x = setInterval(function () {
 
         if (distance < 0) {
             clearInterval(x);
-            daysElement.innerHTML = "¡Comienza nuestra boda!";
+            daysElement.innerHTML = "¡Ya hemos celebrado nuestra boda!";
             hoursElement.innerHTML = "";
             minutesElement.innerHTML = "";
             secondsElement.innerHTML = "";

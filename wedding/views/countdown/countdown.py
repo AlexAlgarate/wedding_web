@@ -5,7 +5,6 @@ from wedding import utils as utils
 from wedding.components import secondary_button, text_section
 from wedding.styles import Color, Font, FontHeight, FontWeight, Size
 
-from .components import create_countdown_vstack
 
 
 def finished_wedding(text: str) -> rx.Component:
