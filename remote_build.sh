@@ -1,10 +1,10 @@
-python -m pip install --upgrade pip
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
-rm -fr public
-isort wedding/
-black wedding/
-ruff check wedding/ --fix
+rm -rf public
 reflex init
-reflex export --frontend-only
+reflex export --frontend-only 
 unzip frontend.zip -d public
 rm -f frontend.zip
+deactivate
