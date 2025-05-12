@@ -6,7 +6,6 @@ from wedding.components import secondary_button, text_section
 from wedding.styles import Color, Font, FontHeight, FontWeight, Size
 
 
-
 def finished_wedding(text: str) -> rx.Component:
     return rx.text(
         text,
