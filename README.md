@@ -1,7 +1,7 @@
 # Wedding web
 
 [![Python](https://img.shields.io/badge/Python-3.11+-yellow?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)](https://python.org)
-[![Reflex](https://img.shields.io/badge/Reflex-0.4.3+-5646ED?style=for-the-badge&logo=reflex&logoColor=white&labelColor=101010)](https://reflex.dev)
+[![Reflex](https://img.shields.io/badge/Reflex-0.7.10+-5646ED?style=for-the-badge&logo=reflex&logoColor=white&labelColor=101010)](https://reflex.dev)
 
 ## Personal frontend web development project with Python for managing the invitations to my wedding
 
@@ -78,15 +78,16 @@ To deploy the project, I use *[Vercel](https://vercel.com/)*, but you can use th
 In my case, I have automated the deployment process with a GitHub Action following Reflex's instructions when exporting the frontend. If you want to add states and backend, you should review this point as Vercel doesn't play well with Python code (an alternative is *[Railway](https://railway.app/)*).
 
 ```sh
-python -m pip install --upgrade pip
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
-rm -fr public
-isort wedding/
-black wedding/
+rm -rf public
 reflex init
-reflex export --frontend-only
+reflex export --frontend-only 
 unzip frontend.zip -d public
 rm -f frontend.zip
+deactivate
 ```
 
 ### 💻 [Access the project's code](./wedding)
